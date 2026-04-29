@@ -1,20 +1,20 @@
 ---
 import { getCollection } from 'astro:content'
-import SEOHead from '../components/SEOHead.astro'
-import Footer from '../components/Footer.astro'
-import { collectionJsonLd } from '../lib/seo'
-import '../styles/global.css'
+import SEOHead from '../../components/SEOHead.astro'
+import Footer from '../../components/Footer.astro'
+import { collectionJsonLd } from '../../lib/seo'
+import '../../styles/global.css'
 
-const articles = await getCollection('article', ({ id }) => id.startsWith('zh/'))
+const articles = await getCollection('article', ({ id }) => id.startsWith('en/'))
 
 const categories: Record<string, string> = {
-  tutorial: '教程',
-  'use-case': '使用场景',
-  comparison: '对比评测',
-  country: '国家/地区',
-  brand: '品牌',
-  education: '加密教育',
-  resource: '资源',
+  tutorial: 'Tutorials',
+  'use-case': 'Use Cases',
+  comparison: 'Comparisons',
+  country: 'By Country',
+  brand: 'By Brand',
+  education: 'Crypto Education',
+  resource: 'Resources',
 }
 
 const grouped = Object.entries(categories).reduce(
@@ -26,20 +26,20 @@ const grouped = Object.entries(categories).reduce(
   {} as Record<string, { label: string; items: typeof articles }>,
 )
 
-const jsonLd = collectionJsonLd('uCards Learn', 'https://ucards.uk/learn/')
+const jsonLd = collectionJsonLd('uCards Learn', 'https://ucards.uk/learn/en/')
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <SEOHead
-      title="学习中心"
-      description="虚拟信用卡和加密货币支付完全指南。了解如何使用 USDT 在线支付、无需 KYC 开卡等。"
-      keywords="虚拟信用卡, 加密货币支付, USDT, 在线支付, 教程"
-      path="/"
-      lang="zh"
+      title="Learn Center"
+      description="Complete guides on virtual credit cards and cryptocurrency payments. Learn how to pay with USDT, get cards without KYC, and more."
+      keywords="virtual credit card, crypto payment, USDT, online payment, tutorial"
+      path="/en/"
+      lang="en"
       jsonLd={jsonLd}
     />
   </head>
@@ -50,15 +50,15 @@ const jsonLd = collectionJsonLd('uCards Learn', 'https://ucards.uk/learn/')
           uCards <span class="text-gray-400 font-normal text-base">Learn</span>
         </span>
         <nav class="flex gap-4 text-sm">
-          <a href="/learn/en/" class="text-gray-600 hover:text-blue-600">English</a>
+          <a href="/learn/" class="text-gray-600 hover:text-blue-600">中文</a>
           <a href="https://ucards.uk" class="text-gray-600 hover:text-blue-600">uCards</a>
         </nav>
       </div>
     </header>
 
     <main class="max-w-4xl mx-auto px-4 py-8">
-      <h1 class="text-3xl font-bold mb-2">学习中心</h1>
-      <p class="text-gray-600 mb-8">虚拟信用卡和加密货币支付完全指南</p>
+      <h1 class="text-3xl font-bold mb-2">Learn Center</h1>
+      <p class="text-gray-600 mb-8">Complete guides on virtual credit cards and crypto payments</p>
 
       {Object.values(grouped).map(({ label, items }) => (
         <section class="mb-10">
@@ -66,7 +66,7 @@ const jsonLd = collectionJsonLd('uCards Learn', 'https://ucards.uk/learn/')
           <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((article) => (
               <a
-                href={`/learn/${article.data.slug}`}
+                href={`/learn/en/${article.data.slug}`}
                 class="block p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-sm transition-all"
               >
                 <h3 class="font-medium text-gray-900 mb-1">{article.data.title}</h3>

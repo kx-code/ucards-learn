@@ -1,0 +1,26 @@
+---
+import { breadcrumbJsonLd } from '../lib/seo'
+
+interface Props {
+  items: { name: string; url: string }[]
+}
+
+const { items } = Astro.props
+const allItems = [{ name: 'Home', url: 'https://ucards.uk' }, ...items]
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd(allItems))} />
+<nav aria-label="Breadcrumb" class="text-sm text-gray-500 mb-6">
+  <ol class="flex items-center gap-1 flex-wrap">
+    {allItems.map((item, i) => (
+      <li class="flex items-center gap-1">
+        {i > 0 && <span class="mx-1">/</span>}
+        {i === allItems.length - 1 ? (
+          <span class="text-gray-900 font-medium">{item.name}</span>
+        ) : (
+          <a href={item.url} class="hover:text-blue-600 transition-colors">{item.name}</a>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
