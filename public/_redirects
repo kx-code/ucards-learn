@@ -1,0 +1,2 @@
+# Disable SPA fallback - serve static HTML files directly
+# Astro generates all pages as static HTML
