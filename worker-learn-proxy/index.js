@@ -4,9 +4,14 @@ export default {
 
     // 只处理 /learn 路径
     if (url.pathname.startsWith('/learn')) {
-      // 重写路径，去掉 /learn 前缀
-      const learnPath = url.pathname.replace('/learn', '') || '/'
-      const targetUrl = `https://master.ucards-learn.pages.dev${learnPath}${url.search}`
+      let targetPath = url.pathname
+
+      // 静态资源：去掉 /learn 前缀（因为 Astro 构建在根目录）
+      if (url.pathname.startsWith('/learn/_astro') || url.pathname.startsWith('/learn/favicon')) {
+        targetPath = url.pathname.replace('/learn', '')
+      }
+
+      const targetUrl = `https://ucards-learn.pages.dev${targetPath}${url.search}`
 
       // 代理请求
       const proxyRequest = new Request(targetUrl, request)
