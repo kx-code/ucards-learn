@@ -4,7 +4,9 @@ import Breadcrumbs from '../components/Breadcrumbs.astro'
 import CTASection from '../components/CTASection.astro'
 import RelatedPosts from '../components/RelatedPosts.astro'
 import Footer from '../components/Footer.astro'
-import { articleJsonLd } from '../lib/seo'
+import FAQ from '../components/FAQ.astro'
+	import ArticleEnhancements from '../components/ArticleEnhancements.astro'
+	import { articleJsonLd } from '../lib/seo'
 import '../styles/global.css'
 
 interface Props {
@@ -22,9 +24,11 @@ interface Props {
     subtitle: string
   }
   category: string
+  faqs?: Array<{ question: string; answer: string }>
+  schemaType?: 'article' | 'howto' | 'glossary' | 'product'
 }
 
-const { title, description, keywords, slug, lang, date, updated, image, related, cta, category } = Astro.props
+const { title, description, keywords, slug, lang, date, updated, image, related, cta, category, faqs = [], schemaType = 'article' } = Astro.props
 
 const langPath = lang === 'en' ? `/en/${slug}` : `/${slug}`
 const jsonLd = articleJsonLd({
@@ -78,9 +82,23 @@ const breadcrumbItems = [
 
     <main class="max-w-3xl mx-auto px-4 py-8">
       <Breadcrumbs items={breadcrumbItems} />
+      <ArticleEnhancements
+        title={title}
+        description={description}
+        slug={slug}
+        lang={lang}
+        date={date}
+        updated={updated}
+        category={category}
+        faqs={faqs}
+        schemaType={schemaType}
+      />
       <article class="prose">
         <slot />
       </article>
+      {faqs && faqs.length > 0 && (
+        <FAQ faqs={faqs} lang={lang} />
+      )}
       <CTASection
         title={cta?.title || (lang === 'en' ? 'Get Your Virtual Card in 2 Minutes' : '2 分钟获取你的虚拟卡')}
         subtitle={cta?.subtitle || (lang === 'en' ? 'No KYC required. Pay with USDT.' : '无需 KYC，支持 USDT 支付')}
