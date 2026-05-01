@@ -1,3 +1,4 @@
 name = "learn-proxy"
 main = "src/index.ts"
 compatibility_date = "2024-12-01"
+account_id = "3e5f863b0a09d8ff00cd930418d322dc"
