@@ -198,12 +198,13 @@ export function organizationJsonLd() {
 		'@context': 'https://schema.org',
 		'@type': 'Organization',
 		name: 'uCards',
+		alternateName: ["uCards", "U卡", "u卡", "U Card", "uCard", "uCards虚拟信用卡"],
 		url: 'https://ucards.uk',
 		logo: {
 			'@type': 'ImageObject',
 			url: 'https://ucards.uk/icons/icon-192.svg',
 		},
-		description: 'No-KYC virtual credit card platform. Pay with USDT, TRON, Ethereum. Get instant Visa, Mastercard, and Discover cards.',
+		description: 'uCards (U卡) — No-KYC virtual credit card platform. Pay with USDT, TRON, Ethereum. Get instant Visa, Mastercard, and Discover cards. Zero setup fee.',
 		sameAs: [
 			'https://twitter.com/ucards',
 			'https://github.com/ucards',
@@ -217,7 +218,7 @@ export function webSiteJsonLd() {
 		'@type': 'WebSite',
 		name: 'uCards Learn',
 		url: 'https://ucards.uk/learn',
-		description: 'Learn about virtual credit cards, cryptocurrency payments, and online security. 44+ in-depth guides and tutorials.',
+		description: 'uCards Learn — Learn about virtual credit cards, cryptocurrency payments, and online security. 44+ in-depth guides and tutorials. U卡知识库。',
 		publisher: {
 			'@type': 'Organization',
 			name: 'uCards',

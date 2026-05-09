@@ -1,7 +1,7 @@
 ---
 title: "虚拟卡常见问题：2026 年 20 个高频问题解答"
 description: "关于虚拟信用卡和加密货币支付的常见问题解答。涵盖费用、安全、KYC 要求、支持的币种等，帮助你快速了解虚拟卡。"
-keywords: "虚拟卡常见问题, 加密卡FAQ, 虚拟卡指南, 加密支付常见问题"
+keywords: "虚拟卡常见问题, 加密卡FAQ, 虚拟卡指南, 加密支付常见问题, U卡, ucard, ucards"
 category: "resource"
 slug: "faq"
 date: 2026-04-30

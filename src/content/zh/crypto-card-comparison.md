@@ -1,7 +1,7 @@
 ---
 title: "2026 年加密货币信用卡对比：最佳加密消费卡评测"
 description: "全面对比 2026 年最佳加密货币信用卡。涵盖费用、支持币种、返现奖励、网络支持和真实评测。"
-keywords: "加密货币信用卡对比, 最佳加密卡, 比特币借记卡, 加密虚拟卡, USDT卡"
+keywords: "加密货币信用卡对比, 最佳加密卡, 比特币借记卡, 加密虚拟卡, USDT卡, U卡, ucard, ucards"
 category: "comparison"
 slug: "crypto-card-comparison"
 date: 2026-04-30

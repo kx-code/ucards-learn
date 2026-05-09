@@ -1,7 +1,7 @@
 ---
 title: "如何用加密货币支付 Google Ads 广告费（USDT、ETH、Bitcoin）"
 description: "使用虚拟信用卡以加密货币为 Google Ads 账户充值。面向希望使用 USDT、ETH 或 BNB 支付的广告主的详细指南。"
-keywords: "用加密货币支付Google Ads, Google Ads USDT, 用比特币充值Google Ads, Google Ads加密支付"
+keywords: "用加密货币支付Google Ads, Google Ads USDT, 用比特币充值Google Ads, Google Ads加密支付, U卡, ucard, ucards"
 category: "use-case"
 slug: "pay-google-ads-with-crypto"
 date: 2026-04-30

@@ -1,7 +1,7 @@
 ---
 title: "Visa Virtual Card 2026: Everything You Need to Know"
 description: "Learn about Visa virtual cards — how they work, where they are accepted, top providers, fees, and how to get one instantly with crypto. Complete Visa virtual card guide."
-keywords: "visa virtual card, virtual visa card, visa virtual credit card, instant visa card, visa prepaid virtual card"
+keywords: "visa virtual card, virtual visa card, visa virtual credit card, instant visa card, visa prepaid virtual card, ucard, ucards, u card"
 category: "brand"
 slug: "visa-virtual-card"
 date: 2026-04-30

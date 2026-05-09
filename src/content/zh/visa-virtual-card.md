@@ -1,7 +1,7 @@
 ---
 title: "Visa 虚拟卡 2026：你需要知道的一切"
 description: "全面了解 Visa 虚拟卡——工作原理、受理范围、顶级提供商、费用，以及如何用加密货币即时获得一张 Visa 虚拟卡。"
-keywords: "visa虚拟卡, 虚拟visa卡, visa虚拟信用卡, 即时visa卡, visa预付费虚拟卡"
+keywords: "visa虚拟卡, 虚拟visa卡, visa虚拟信用卡, 即时visa卡, visa预付费虚拟卡, U卡, ucard, ucards"
 category: "brand"
 slug: "visa-virtual-card"
 date: 2026-04-30

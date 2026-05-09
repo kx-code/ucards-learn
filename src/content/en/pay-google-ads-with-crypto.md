@@ -1,7 +1,7 @@
 ---
 title: "How to Pay for Google Ads with Crypto (USDT, ETH, Bitcoin)"
 description: "Fund your Google Ads account with cryptocurrency using a virtual credit card. Step-by-step guide for advertisers who want to pay with USDT, ETH, or BNB."
-keywords: "pay google ads with crypto, google ads usdt, fund google ads with bitcoin, google ads crypto payment"
+keywords: "pay google ads with crypto, google ads usdt, fund google ads with bitcoin, google ads crypto payment, ucard, ucards, u card"
 category: "use-case"
 slug: "pay-google-ads-with-crypto"
 date: 2026-04-30

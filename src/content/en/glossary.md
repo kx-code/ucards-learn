@@ -1,7 +1,7 @@
 ---
 title: "Crypto Payment Glossary: 30+ Terms You Need to Know in 2026"
 description: "A complete A-Z glossary of cryptocurrency payment terms. Understand USDT, TRC20, gas fees, stablecoins, and more essential crypto concepts."
-keywords: "crypto payment glossary, crypto terms, blockchain glossary, virtual card terminology"
+keywords: "crypto payment glossary, crypto terms, blockchain glossary, virtual card terminology, ucard, ucards, u card"
 category: "resource"
 slug: "glossary"
 date: 2026-04-30

@@ -1,7 +1,7 @@
 ---
 title: "Crypto Without KYC: Privacy Guide for 2026"
 description: "Discover how to use crypto without KYC verification. Learn privacy benefits, compare no-KYC services, and find out how uCards enables private crypto spending."
-keywords: "crypto no KYC, no KYC crypto card, anonymous crypto, privacy crypto, crypto without verification"
+keywords: "crypto no KYC, no KYC crypto card, anonymous crypto, privacy crypto, crypto without verification, ucard, ucards, u card"
 category: "tutorial"
 slug: "crypto-without-kyc"
 date: 2026-04-30

@@ -1,7 +1,7 @@
 ---
 title: "Crypto Card Comparison 2026: Best Cards for Spending Cryptocurrency"
 description: "Compare the top crypto cards of 2026. Fees, supported coins, rewards, networks, and honest reviews of crypto-funded virtual and physical cards."
-keywords: "crypto card comparison, best crypto card 2026, bitcoin debit card, crypto virtual card, usdt card"
+keywords: "crypto card comparison, best crypto card 2026, bitcoin debit card, crypto virtual card, usdt card, ucard, ucards, u card"
 category: "comparison"
 slug: "crypto-card-comparison"
 date: 2026-04-30

@@ -1,7 +1,7 @@
 ---
 title: "如何用加密货币支付 ChatGPT Plus 订阅（USDT/TRON/ETH）"
 description: "详细教程：使用虚拟信用卡以 USDT、ETH 或 BNB 支付 ChatGPT Plus 和 OpenAI 订阅。无需 KYC，无需银行卡。"
-keywords: "用加密货币支付ChatGPT, ChatGPT Plus加密货币, OpenAI订阅USDT, 用比特币买ChatGPT"
+keywords: "用加密货币支付ChatGPT, ChatGPT Plus加密货币, OpenAI订阅USDT, 用比特币买ChatGPT, U卡, ucard, ucards"
 category: "use-case"
 slug: "pay-chatgpt-with-crypto"
 date: 2026-04-30

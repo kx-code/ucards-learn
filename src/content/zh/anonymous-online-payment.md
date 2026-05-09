@@ -1,7 +1,7 @@
 ---
 title: "匿名在线支付方式：2026 完整指南"
 description: "了解如何使用虚拟卡、加密货币和隐私工具进行匿名在线支付。无需 KYC、无需银行账户、不暴露个人数据。"
-keywords: "匿名支付, 匿名在线支付, 隐私支付, 虚拟卡匿名, 无KYC支付"
+keywords: "匿名支付, 匿名在线支付, 隐私支付, 虚拟卡匿名, 无KYC支付, U卡, ucard, ucards"
 category: "use-case"
 slug: "anonymous-online-payment"
 date: 2026-04-30

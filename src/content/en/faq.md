@@ -1,7 +1,7 @@
 ---
 title: "Virtual Card FAQ: 20 Common Questions Answered in 2026"
 description: "Frequently asked questions about virtual credit cards and crypto payments. Learn about fees, safety, KYC requirements, supported cryptos, and more."
-keywords: "virtual card faq, crypto card questions, virtual card guide, crypto payment faq"
+keywords: "virtual card faq, crypto card questions, virtual card guide, crypto payment faq, ucard, ucards, u card"
 category: "resource"
 slug: "faq"
 date: 2026-04-30

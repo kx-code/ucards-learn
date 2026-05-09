@@ -1,7 +1,7 @@
 ---
 title: "How to Pay for ChatGPT Plus with Crypto (USDT, TRON, ETH)"
 description: "Step-by-step guide to paying for ChatGPT Plus and OpenAI subscriptions with cryptocurrency using a virtual credit card. No KYC, no bank card needed."
-keywords: "pay chatgpt with crypto, chatgpt plus crypto payment, openai subscription usdt, buy chatgpt with bitcoin"
+keywords: "pay chatgpt with crypto, chatgpt plus crypto payment, openai subscription usdt, buy chatgpt with bitcoin, ucard, ucards, u card"
 category: "use-case"
 slug: "pay-chatgpt-with-crypto"
 date: 2026-04-30

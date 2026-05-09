@@ -1,7 +1,7 @@
 ---
 title: "无需KYC使用加密货币：2026年隐私指南"
 description: "了解如何在不进行KYC验证的情况下使用加密货币。掌握隐私优势，对比无KYC服务，了解uCards如何实现私密加密消费。"
-keywords: "加密货币免KYC, 无KYC加密卡, 匿名加密货币, 隐私加密, 无需验证加密"
+keywords: "加密货币免KYC, 无KYC加密卡, 匿名加密货币, 隐私加密, 无需验证加密, U卡, ucard, ucards"
 category: "tutorial"
 slug: "crypto-without-kyc"
 date: 2026-04-30

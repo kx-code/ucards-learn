@@ -1,7 +1,7 @@
 ---
 title: "什么是虚拟信用卡？2026 完整指南"
 description: "了解什么是虚拟信用卡、它的工作原理，以及为什么它是安全的在线支付方式。无需 KYC，支持 USDT、TRON 等加密货币支付。"
-keywords: "虚拟信用卡, 虚拟卡, 在线支付, 无需KYC"
+keywords: "虚拟信用卡, 虚拟卡, 在线支付, 无需KYC, U卡, ucard, ucards"
 category: "tutorial"
 slug: "what-is-virtual-credit-card"
 date: 2026-04-29
