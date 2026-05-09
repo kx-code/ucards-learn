@@ -2,7 +2,7 @@
 title: "uCards 评测 2026：U卡虚拟信用卡真实体验"
 description: "深度评测 uCards 虚拟信用卡平台。开卡速度、费用、支持的商家、安全性全面分析，帮你判断 U卡是否值得使用。"
 keywords: "uCards 评测, U卡评测, ucards.uk 评价, 虚拟卡评测, ucard review"
-category: "review"
+category: "brand"
 slug: "ucards-review"
 date: 2026-05-10
 updated: 2026-05-10

@@ -2,7 +2,7 @@
 title: "uCards Review 2026: Is the U Card Worth It?"
 description: "In-depth review of uCards virtual credit card platform. Speed, fees, supported merchants, security — everything you need to decide if uCards is right for you."
 keywords: "uCards review, u card review, ucards.uk review, virtual card review, ucard review 2026"
-category: "review"
+category: "brand"
 slug: "ucards-review"
 date: 2026-05-10
 updated: 2026-05-10
