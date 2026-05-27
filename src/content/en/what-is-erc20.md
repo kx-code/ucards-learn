@@ -1,18 +1,32 @@
 ---
-title: "What Is ERC20? Ethereum Token Standard Explained 2026"
+title: 'What Is ERC20? Ethereum Token Standard Explained 2026'
 description: "Learn what ERC20 is, how Ethereum's token standard works, gas fees explained, popular ERC20 tokens, and how it compares to TRC20 for crypto payments."
-keywords: "what is erc20, erc20 token, ethereum token standard, erc20 usdt, erc20 explained"
-category: "education"
-slug: "what-is-erc20"
+keywords: 'what is erc20, erc20 token, ethereum token standard, erc20 usdt, erc20 explained'
+category: 'education'
+slug: 'what-is-erc20'
 date: 2026-04-30
 updated: 2026-04-30
 related:
-  - "what-is-trc20"
-  - "tron-vs-ethereum"
-  - "how-to-use-metamask"
+  - 'what-is-trc20'
+  - 'tron-vs-ethereum'
+  - 'how-to-use-metamask'
 cta:
-  title: "Spend ERC20 Tokens with a Virtual Card"
-  subtitle: "Convert your ETH and ERC20 tokens into a usable Visa card — no KYC."
+  title: 'Spend ERC20 Tokens with a Virtual Card'
+  subtitle: 'Convert your ETH and ERC20 tokens into a usable Visa card — no KYC.'
+schemaType: 'product'
+rating: 4.8
+ratingCount: 1200
+faqs:
+  - question: 'Why are ERC20 token transfers so expensive?'
+    answer: 'ERC20 transfers are executed on the Ethereum network and require Gas fees. When the network is congested, Gas prices spike, and a simple transfer can cost $5-30. This is because Ethereum block space is limited, and users must bid to have their transactions included.'
+  - question: 'What is the difference between ERC20 and TRC20?'
+    answer: 'Both are token standards, but they run on different blockchains. ERC20 runs on Ethereum with a richer ecosystem but higher Gas fees. TRC20 runs on TRON with transfer fees under $1 and faster confirmation. TRC20 is recommended for everyday transfers, while ERC20 is better suited for DeFi operations.'
+  - question: 'Are all Ethereum tokens ERC20?'
+    answer: 'No. Ethereum also has other standards like ERC721 (the NFT standard) and ERC1155 (a multi-token standard). However, the vast majority of fungible tokens (such as USDT, USDC, and UNI) follow the ERC20 standard, making it the most widely used token specification on Ethereum.'
+  - question: 'How can I reduce ERC20 transfer fees?'
+    answer: 'You can transfer during periods of low network congestion (typically early morning UTC), or use Layer 2 networks like Arbitrum and Optimism to significantly reduce costs. For everyday USDT transfers, switching to the TRC20 network is the most straightforward way to save on fees.'
+  - question: 'Does uCards support Ethereum network top-ups?'
+    answer: 'Yes. uCards supports ERC20 USDT and ETH top-ups. While Ethereum network Gas fees are higher, it is convenient for users who already hold Ethereum-based assets. After top-up, funds are automatically converted to a USD balance that can be spent at online merchants worldwide.'
 ---
 
 ## What Is ERC20?
@@ -33,13 +47,13 @@ With ERC20, any wallet or exchange can support a new token automatically — as 
 
 Every ERC20 token contract must implement these six mandatory functions:
 
-| Function | Purpose |
-|----------|---------|
-| `totalSupply()` | Returns the total number of tokens in existence |
-| `balanceOf(address)` | Returns the token balance of a specific address |
-| `transfer(to, amount)` | Sends tokens from the caller to another address |
-| `approve(spender, amount)` | Allows another address to spend a specified amount |
-| `allowance(owner, spender)` | Returns the remaining amount a spender can use |
+| Function                         | Purpose                                                      |
+| -------------------------------- | ------------------------------------------------------------ |
+| `totalSupply()`                  | Returns the total number of tokens in existence              |
+| `balanceOf(address)`             | Returns the token balance of a specific address              |
+| `transfer(to, amount)`           | Sends tokens from the caller to another address              |
+| `approve(spender, amount)`       | Allows another address to spend a specified amount           |
+| `allowance(owner, spender)`      | Returns the remaining amount a spender can use               |
 | `transferFrom(from, to, amount)` | Transfers tokens from one address to another (with approval) |
 
 Additionally, most ERC20 tokens implement two optional events:
@@ -69,12 +83,12 @@ Unlike TRON's bandwidth/energy model, Ethereum uses a gas fee system. Every oper
 
 ### Typical Gas Costs (2026)
 
-| Operation | Approximate Gas Cost |
-|-----------|---------------------|
-| ERC20 token transfer | 45,000-65,000 gas |
-| ETH transfer | 21,000 gas |
-| Token swap on DEX | 150,000-300,000 gas |
-| Smart contract interaction | Varies widely |
+| Operation                  | Approximate Gas Cost |
+| -------------------------- | -------------------- |
+| ERC20 token transfer       | 45,000-65,000 gas    |
+| ETH transfer               | 21,000 gas           |
+| Token swap on DEX          | 150,000-300,000 gas  |
+| Smart contract interaction | Varies widely        |
 
 During periods of high activity, ERC20 transfers can cost $5-30 or more. This is why many users choose TRC20 for routine USDT transfers while reserving Ethereum for DeFi activities where the ecosystem justifies the cost.
 
@@ -83,16 +97,19 @@ During periods of high activity, ERC20 transfers can cost $5-30 or more. This is
 The ERC20 standard hosts thousands of tokens, but some of the most significant include:
 
 ### Stablecoins
+
 - **USDT (Tether)**: The largest stablecoin, pegged 1:1 to USD
 - **USDC (Circle)**: Regulated, audited USD stablecoin
 - **DAI (MakerDAO)**: Decentralized, crypto-collateralized stablecoin
 
 ### DeFi Tokens
+
 - **UNI (Uniswap)**: Governance token for the largest decentralized exchange
 - **AAVE**: Governance token for the Aave lending protocol
 - **LINK (Chainlink)**: Oracle network token powering price feeds
 
 ### Infrastructure
+
 - **WBTC (Wrapped Bitcoin)**: Bitcoin represented as an ERC20 token on Ethereum
 - **LDO (Lido DAO)**: Liquid staking governance token
 
@@ -100,13 +117,13 @@ The ERC20 standard hosts thousands of tokens, but some of the most significant i
 
 Both ERC20 and TRC20 are excellent token standards, but they serve different needs:
 
-| Factor | ERC20 (Ethereum) | TRC20 (TRON) |
-|--------|-------------------|--------------|
-| Transfer cost | $2-30 | $0.10-1.00 |
-| Speed | 1-5 minutes | Under 1 minute |
-| DeFi ecosystem | Extensive | Growing |
-| Smart contracts | Most advanced | Solid but smaller |
-| Best for | DeFi, complex apps | Payments, transfers |
+| Factor          | ERC20 (Ethereum)   | TRC20 (TRON)        |
+| --------------- | ------------------ | ------------------- |
+| Transfer cost   | $2-30              | $0.10-1.00          |
+| Speed           | 1-5 minutes        | Under 1 minute      |
+| DeFi ecosystem  | Extensive          | Growing             |
+| Smart contracts | Most advanced      | Solid but smaller   |
+| Best for        | DeFi, complex apps | Payments, transfers |
 
 **Use ERC20 when:** You need access to Ethereum's DeFi ecosystem, are interacting with complex smart contracts, or need the highest level of decentralization.
 

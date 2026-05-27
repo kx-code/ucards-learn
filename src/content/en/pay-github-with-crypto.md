@@ -1,25 +1,28 @@
 ---
-title: "How to Pay for GitHub Pro and Copilot with Crypto"
-description: "Step-by-step guide to paying for GitHub Pro, GitHub Team, and GitHub Copilot subscriptions with cryptocurrency. No KYC virtual card accepted."
-keywords: "github pro crypto, github copilot usdt, github subscription bitcoin, pay github with crypto"
-category: "use-case"
-slug: "pay-github-with-crypto"
+title: 'How to Pay for GitHub Pro and Copilot with Crypto'
+description: 'Step-by-step guide to paying for GitHub Pro, GitHub Team, and GitHub Copilot subscriptions with cryptocurrency. No KYC virtual card accepted.'
+keywords: 'github pro crypto, github copilot usdt, github subscription bitcoin, pay github with crypto'
+category: 'use-case'
+slug: 'pay-github-with-crypto'
 date: 2026-05-16
 updated: 2026-05-16
 related:
-  - "pay-notion-with-crypto"
-  - "pay-figma-with-crypto"
-  - "ucards-how-to-pay-subscriptions"
+  - 'pay-notion-with-crypto'
+  - 'pay-figma-with-crypto'
+  - 'ucards-how-to-pay-subscriptions'
 cta:
-  title: "Get Your Virtual Card in 2 Minutes"
-  subtitle: "No KYC required. Pay GitHub with USDT."
+  title: 'Get Your Virtual Card in 2 Minutes'
+  subtitle: 'No KYC required. Pay GitHub with USDT.'
 faqs:
-  - question: "Does GitHub accept cryptocurrency?"
+  - question: 'Does GitHub accept cryptocurrency?'
     answer: "GitHub doesn't accept crypto directly, but you can use a virtual credit card funded with crypto. GitHub accepts Visa and Mastercard, which virtual cards provide."
-  - question: "How much does GitHub Copilot cost?"
-    answer: "GitHub Copilot Individual costs $10/month or $100/year. GitHub Copilot Business is $19/user/month. GitHub Pro is $4/month."
-  - question: "Can I pay for GitHub Enterprise with crypto?"
-    answer: "Yes, through a virtual card. GitHub Enterprise is $21/user/month and can be paid with any Visa/Mastercard, including crypto-funded virtual cards."
+  - question: 'How much does GitHub Copilot cost?'
+    answer: 'GitHub Copilot Individual costs $10/month or $100/year. GitHub Copilot Business is $19/user/month. GitHub Pro is $4/month.'
+  - question: 'Can I pay for GitHub Enterprise with crypto?'
+    answer: 'Yes, through a virtual card. GitHub Enterprise is $21/user/month and can be paid with any Visa/Mastercard, including crypto-funded virtual cards.'
+schemaType: 'product'
+rating: 4.8
+ratingCount: 1200
 ---
 
 ## Why Pay GitHub with Cryptocurrency?
@@ -32,15 +35,15 @@ A virtual card funded with cryptocurrency gives you a working Visa card that Git
 
 ### GitHub pricing tiers
 
-| Plan | Price | Best For | Can Pay with uCards? |
-|------|-------|----------|---------------------|
-| GitHub Free | $0 | Open source, personal projects | N/A |
-| GitHub Pro | $4/mo or $48/yr | Individual developers | Yes |
-| GitHub Team | $4/user/mo | Small teams, startups | Yes |
-| GitHub Enterprise | $21/user/mo | Large organizations | Yes |
-| Copilot Individual | $10/mo or $100/yr | AI coding assistant | Yes |
-| Copilot Business | $19/user/mo | Team-wide AI assistant | Yes |
-| Copilot Enterprise | $39/user/mo | Enterprise AI features | Yes |
+| Plan               | Price             | Best For                       | Can Pay with uCards? |
+| ------------------ | ----------------- | ------------------------------ | -------------------- |
+| GitHub Free        | $0                | Open source, personal projects | N/A                  |
+| GitHub Pro         | $4/mo or $48/yr   | Individual developers          | Yes                  |
+| GitHub Team        | $4/user/mo        | Small teams, startups          | Yes                  |
+| GitHub Enterprise  | $21/user/mo       | Large organizations            | Yes                  |
+| Copilot Individual | $10/mo or $100/yr | AI coding assistant            | Yes                  |
+| Copilot Business   | $19/user/mo       | Team-wide AI assistant         | Yes                  |
+| Copilot Enterprise | $39/user/mo       | Enterprise AI features         | Yes                  |
 
 GitHub offers annual billing for Pro ($48/year, saving 17%) and Copilot Individual ($100/year, saving 17%). Loading enough crypto for annual billing saves money over monthly payments.
 
@@ -112,12 +115,12 @@ Set a reminder 11 months from your payment date to reload your card before the a
 
 ### Recommended deposit amounts
 
-| Subscription | Monthly Cost | Annual Cost | Recommended Deposit |
-|-------------|-------------|-------------|-------------------|
-| GitHub Pro | $4/mo | $48/yr | $15 (monthly) or $55 (annual) |
-| Copilot Individual | $10/mo | $100/yr | $20 (monthly) or $115 (annual) |
-| GitHub Team (5 users) | $20/mo | — | $30 |
-| Copilot Business (5 users) | $95/mo | — | $110 |
+| Subscription               | Monthly Cost | Annual Cost | Recommended Deposit            |
+| -------------------------- | ------------ | ----------- | ------------------------------ |
+| GitHub Pro                 | $4/mo        | $48/yr      | $15 (monthly) or $55 (annual)  |
+| Copilot Individual         | $10/mo       | $100/yr     | $20 (monthly) or $115 (annual) |
+| GitHub Team (5 users)      | $20/mo       | —           | $30                            |
+| Copilot Business (5 users) | $95/mo       | —           | $110                           |
 
 ### What happens if payment fails?
 

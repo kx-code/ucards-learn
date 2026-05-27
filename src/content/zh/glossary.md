@@ -1,18 +1,19 @@
 ---
-title: "加密支付术语表：2026 年你需要了解的 30+ 核心术语"
-description: "完整的加密货币支付 A-Z 术语表。涵盖 USDT、TRC20、Gas 费、稳定币等核心概念，助你轻松理解加密支付世界。"
-keywords: "加密支付术语表, 区块链术语, 虚拟卡术语, USDT术语, U卡, ucard, ucards"
-category: "resource"
-slug: "glossary"
+title: '加密支付术语表：2026 年你需要了解的 30+ 核心术语'
+description: '完整的加密货币支付 A-Z 术语表。涵盖 USDT、TRC20、Gas 费、稳定币等核心概念，助你轻松理解加密支付世界。'
+keywords: '加密支付术语表, 区块链术语, 虚拟卡术语, USDT术语, U卡, ucard, ucards'
+category: 'resource'
+slug: 'glossary'
 date: 2026-04-30
 updated: 2026-04-30
 related:
-  - "what-is-trc20"
-  - "stablecoin-guide"
-  - "faq"
+  - 'what-is-trc20'
+  - 'stablecoin-guide'
+  - 'faq'
 cta:
-  title: "准备好用加密货币进行日常支付了吗？"
-  subtitle: "获取虚拟卡，用 USDT 在线消费 —— 无需 KYC。"
+  title: '准备好用加密货币进行日常支付了吗？'
+  subtitle: '获取虚拟卡，用 USDT 在线消费 —— 无需 KYC。'
+schemaType: 'glossary'
 ---
 
 ## 加密支付核心术语表

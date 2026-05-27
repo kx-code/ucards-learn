@@ -25,10 +25,12 @@ interface Props {
   }
   category: string
   faqs?: Array<{ question: string; answer: string }>
-  schemaType?: 'article' | 'howto' | 'glossary' | 'product'
+  schemaType?: 'article' | 'howto' | 'glossary' | 'product' | 'review' | 'faq'
+  rating?: number
+  ratingCount?: number
 }
 
-const { title, description, keywords, slug, lang, date, updated, image, related, cta, category, faqs = [], schemaType = 'article' } = Astro.props
+const { title, description, keywords, slug, lang, date, updated, image, related, cta, category, faqs = [], schemaType = 'article', rating, ratingCount } = Astro.props
 
 const langPath = lang === 'en' ? `/en/${slug}` : `/${slug}`
 const jsonLd = articleJsonLd({
@@ -77,14 +79,14 @@ const breadcrumbItems = [
     <!-- End Google Tag Manager (noscript) -->
     <header class="border-b border-gray-100">
       <div class="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href={lang === 'en' ? '/learn/en/' : '/learn/'} class="text-xl font-bold text-blue-600">
+        <a href={lang === 'en' ? '/learn/en/' : '/learn/'} class="text-xl font-bold text-blue-600" data-agent-brand="site-name">
           uCards <span class="text-gray-400 font-normal text-base">Learn</span>
         </a>
         <nav class="flex gap-4 text-sm">
           <a href={lang === 'en' ? '/learn/en/' : '/learn/'} class="text-gray-600 hover:text-blue-600 transition-colors">
             {lang === 'en' ? 'All Articles' : '所有文章'}
           </a>
-          <a href="https://ucards.uk" class="text-gray-600 hover:text-blue-600 transition-colors">
+          <a href="https://ucards.uk" class="text-gray-600 hover:text-blue-600 transition-colors" data-agent-brand="nav-link">
             uCards
           </a>
         </nav>
@@ -103,6 +105,8 @@ const breadcrumbItems = [
         category={category}
         faqs={faqs}
         schemaType={schemaType}
+        rating={rating}
+        ratingCount={ratingCount}
       />
       <article class="prose">
         <slot />

@@ -44,13 +44,13 @@
 
 ## 命令
 
-| 命令 | 说明 |
-|------|------|
-| `npm install` | 安装依赖 |
-| `npm run dev` | 启动开发服务器 (localhost:4321) |
-| `npm run build` | 构建生产版本到 `./dist/` |
-| `npm run preview` | 本地预览构建结果 |
-| `npx wrangler pages deploy dist --project-name=ucards-learn` | 部署到 Cloudflare Pages |
+| 命令                                                         | 说明                            |
+| ------------------------------------------------------------ | ------------------------------- |
+| `npm install`                                                | 安装依赖                        |
+| `npm run dev`                                                | 启动开发服务器 (localhost:4321) |
+| `npm run build`                                              | 构建生产版本到 `./dist/`        |
+| `npm run preview`                                            | 本地预览构建结果                |
+| `npx wrangler pages deploy dist --project-name=ucards-learn` | 部署到 Cloudflare Pages         |
 
 ## 内容分类
 
@@ -78,25 +78,25 @@
 
 ```yaml
 ---
-title: "文章标题"
-description: "文章描述"
-keywords: "关键词1, 关键词2"
-category: "tutorial"
-slug: "article-slug"
+title: '文章标题'
+description: '文章描述'
+keywords: '关键词1, 关键词2'
+category: 'tutorial'
+slug: 'article-slug'
 date: 2026-04-30
 updated: 2026-04-30
-schemaType: "article"  # article/howto/glossary/product
+schemaType: 'article' # article/howto/glossary/product
 faqs:
-  - question: "常见问题1？"
-    answer: "详细回答..."
-  - question: "常见问题2？"
-    answer: "详细回答..."
+  - question: '常见问题1？'
+    answer: '详细回答...'
+  - question: '常见问题2？'
+    answer: '详细回答...'
 related:
-  - "related-article-slug-1"
-  - "related-article-slug-2"
+  - 'related-article-slug-1'
+  - 'related-article-slug-2'
 cta:
-  title: "行动呼吁标题"
-  subtitle: "行动呼吁副标题"
+  title: '行动呼吁标题'
+  subtitle: '行动呼吁副标题'
 ---
 ```
 
@@ -111,6 +111,7 @@ cta:
 Worker `learn-proxy` 将 `ucards.uk/learn/*` 请求代理到 Cloudflare Pages 项目。
 
 **Worker 配置**:
+
 - 文件: `worker-learn-proxy/index.js`
 - 路由: `ucards.uk/learn/*`
 - 目标: `https://master.ucards-learn.pages.dev`

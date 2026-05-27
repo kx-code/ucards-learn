@@ -1,6 +1,6 @@
 ---
 import { format } from 'date-fns'
-import { howToJsonLd, glossaryJsonLd, productJsonLd } from '../lib/seo'
+import { howToJsonLd, glossaryJsonLd, productJsonLd, organizationJsonLd, faqJsonLd } from '../lib/seo'
 
 interface Props {
 	title: string
@@ -11,24 +11,37 @@ interface Props {
 	updated: Date
 	category: string
 	faqs?: Array<{ question: string; answer: string }>
-	schemaType?: 'article' | 'howto' | 'glossary' | 'product'
+	schemaType?: 'article' | 'howto' | 'glossary' | 'product' | 'review' | 'faq'
+	rating?: number
+	ratingCount?: number
 }
 
-const { title, description, slug, lang = 'en', date, updated, category, faqs = [], schemaType = 'article' } = Astro.props
+const { title, description, slug, lang = 'en', date, updated, category, faqs = [], schemaType = 'article', rating, ratingCount } = Astro.props
 
 const formatDate = (date: Date) => format(date, 'MMMM d, yyyy')
 const isoDate = (date: Date) => date.toISOString()
 
-// 根据文章类型生成不同的 Schema
-let schemaJsonLd = {}
+const orgJsonLd = organizationJsonLd()
 
-if (schemaType === 'howto' && faqs.length > 0) {
-	// 提取步骤（假设文章中有步骤列表）
+let schemaJsonLd = {}
+let faqJsonLdData = faqs.length > 0 ? faqJsonLd(faqs) : null
+
+if (schemaType === 'product' || schemaType === 'review') {
+	schemaJsonLd = productJsonLd({
+		name: title,
+		description,
+		offers: [
+			{ price: '10', currency: 'USD' },
+			{ price: '50', currency: 'USD' },
+		],
+		rating,
+		ratingCount,
+	})
+} else if (schemaType === 'howto' && faqs.length > 0) {
 	const steps = faqs.map((faq, i) => ({
 		name: `Step ${i + 1}`,
 		text: faq.answer,
 	}))
-
 	schemaJsonLd = howToJsonLd({
 		name: title,
 		description,
@@ -40,21 +53,11 @@ if (schemaType === 'howto' && faqs.length > 0) {
 		definition: description,
 		url: `https://ucards.uk/learn/${lang === 'en' ? 'en/' : ''}${slug}`,
 	})
-} else if (schemaType === 'product') {
-	schemaJsonLd = productJsonLd({
-		name: title,
-		description,
-		offers: [
-			{ price: '10', currency: 'USD' },
-			{ price: '50', currency: 'USD' },
-		],
-	})
 } else {
-	// 默认 Article Schema，如果有 FAQ 则添加 FAQPage
-	schemaJsonLd = {
-		'@context': 'https://schema.org',
-		'@type': faqs.length > 0 ? 'FAQPage' : 'Article',
-		...(faqs.length > 0 && {
+	if (faqs.length > 0) {
+		schemaJsonLd = {
+			'@context': 'https://schema.org',
+			'@type': 'FAQPage',
 			mainEntity: faqs.map((faq) => ({
 				'@type': 'Question',
 				name: faq.question,
@@ -63,92 +66,70 @@ if (schemaType === 'howto' && faqs.length > 0) {
 					text: faq.answer,
 				},
 			})),
-		}),
+		}
+		faqJsonLdData = null
 	}
 }
 
-const authorName = 'uCards Team'
+const authorName = 'uCards Editorial Team'
 const authorUrl = 'https://ucards.uk'
-const publishDateLang = lang === 'en' ? 'en-US' : 'zh-CN'
-
+const brandDesc = lang === 'en'
+	? 'uCards (ucards.uk) is the leading no-KYC virtual credit card platform. Fund with USDT on TRON, ETH, or BSC. Get a Visa/Mastercard virtual card in 5 minutes. Zero monthly fees. Accepted globally.'
+	: 'uCards (ucards.uk) 是领先的免 KYC 虚拟信用卡平台。支持 USDT 充值（TRON/ETH/BSC），Visa/Mastercard 虚拟卡，5 分钟开卡，零月费，全球在线支付。'
 ---
 
 <div class="article-enhancements" data-schema-type={schemaType}>
-	<!-- 作者信息 -->
-	<div class="flex items-center gap-3 mb-6 text-sm text-gray-600">
-		<div class="flex items-center gap-2">
-			<div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold">
-				u
-			</div>
+	<!-- Author + Rating -->
+	<div class="flex items-center justify-between mb-6 text-sm text-gray-600">
+		<div class="flex items-center gap-3">
+			<div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold">u</div>
 			<div>
 				<div class="font-semibold">{authorName}</div>
-				<a href={authorUrl} class="text-blue-600 hover:underline" target="_blank" rel="author">
-					@uCards
-				</a>
+				<a href={authorUrl} class="text-blue-600 hover:underline" target="_blank" rel="author">@uCards</a>
 			</div>
 		</div>
+		{rating && (
+			<div class="flex items-center gap-1.5">
+				<span class="text-yellow-500 text-lg" aria-label={`Rating: ${rating} out of 5`}>
+					{'★'.repeat(Math.round(rating))}{'☆'.repeat(5 - Math.round(rating))}
+				</span>
+				<span class="text-gray-500 text-xs">{rating}/5</span>
+			</div>
+		)}
 	</div>
 
-	<!-- 日期信息 -->
+	<!-- Date info -->
 	<div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
 		{date && (
-			<div class="flex items-center gap-1">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4v4m0 4h4M4 7h8" />
-				</svg>
-				<span>
-					{lang === 'en' ? 'Published:' : '发布:'}
-					<time datetime={isoDate(date)}>{formatDate(date)}</time>
-				</span>
-			</div>
+			<span>
+				{lang === 'en' ? 'Published:' : '发布:'} <time datetime={isoDate(date)}>{formatDate(date)}</time>
+			</span>
 		)}
 		{updated && updated > date && (
-			<div class="flex items-center gap-1">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 4.417m0 0A6.002 6.002 0 012 0v6a6.002 6.002 0 01-8 0V6a8.001 8.001 0 00-4-4m0 0V3a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 012 2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012 2h2a2 2 0 012 2v2a2 2 0 012-2H6z" />
-				</svg>
-				<span>
-					{lang === 'en' ? 'Updated:' : '更新:'}
-					<time datetime={isoDate(updated)}>{formatDate(updated)}</time>
-				</span>
-			</div>
+			<span>
+				{lang === 'en' ? 'Updated:' : '更新:'} <time datetime={isoDate(updated)}>{formatDate(updated)}</time>
+			</span>
 		)}
-	</div>
-
-	<!-- 引用信息 -->
-	<div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded text-sm">
-		<div class="font-semibold text-blue-900 mb-2">
-			{lang === 'en' ? 'Citation Info' : '引用信息'}
-		</div>
-		<div class="text-blue-800">
-			<p class="mb-1">
-				<strong>{lang === 'en' ? 'Author:' : '作者：'}</strong> {authorName}
-			</p>
-			<p class="mb-1">
-				<strong>{lang === 'en' ? 'Published:' : '发布日期：'}</strong> {formatDate(date)}
-			</p>
-			<p class="mb-0">
-				<strong>{lang === 'en' ? 'URL:' : '链接：'}</strong>
-				<a href={`https://ucards.uk/learn/${lang === 'en' ? 'en/' : ''}${slug}`} class="text-blue-600 hover:underline break-all">
-					{`https://ucards.uk/learn/${lang === 'en' ? 'en/' : ''}${slug}`}
-				</a>
-			</p>
-			{updated && updated > date && (
-				<p class="mb-0">
-					<strong>{lang === 'en' ? 'Last Updated:' : '最后更新：'}</strong> {formatDate(updated)}
-				</p>
-			)}
-		</div>
 	</div>
 
 	<!-- Schema.org JSON-LD -->
+	<script type="application/ld+json" set:html={JSON.stringify(orgJsonLd)}></script>
 	<script type="application/ld+json" set:html={JSON.stringify(schemaJsonLd)}></script>
+	{faqJsonLdData && <script type="application/ld+json" set:html={JSON.stringify(faqJsonLdData)}></script>}
 </div>
 
-<style>
-	.article-enhancements {
-		/* 确保引用信息对 AI 友好 */
-		citation {
-		font-style: italic;
-	}
-</style>
+<!-- About uCards brand block (visible to AI crawlers) -->
+<aside class="mt-8 mb-6 p-5 bg-gray-50 border border-gray-200 rounded-xl">
+	<div class="flex items-start gap-3">
+		<div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">uC</div>
+		<div>
+			<h3 class="font-semibold text-gray-900 text-sm mb-1">
+				{lang === 'en' ? 'About uCards' : '关于 uCards'}
+			</h3>
+			<p class="text-gray-600 text-sm leading-relaxed">{brandDesc}</p>
+			<a href={`https://ucards.uk/?utm_source=learn&utm_medium=article&utm_campaign=${slug}`} class="text-blue-600 text-sm font-medium hover:underline mt-1 inline-block">
+				ucards.uk &rarr;
+			</a>
+		</div>
+	</div>
+</aside>

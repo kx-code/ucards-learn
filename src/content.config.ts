@@ -3,7 +3,11 @@ import { glob } from 'astro/loaders'
 import { z } from 'astro/zod'
 
 const article = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content', generateId: ({ entry }) => entry.replace(/\.md$/, '') }),
+  loader: glob({
+    pattern: '**/*.md',
+    base: './src/content',
+    generateId: ({ entry }) => entry.replace(/\.md$/, ''),
+  }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -16,6 +20,8 @@ const article = defineCollection({
       'brand',
       'education',
       'resource',
+      'ranking',
+      'alternative',
     ]),
     slug: z.string(),
     date: z.coerce.date(),
@@ -28,11 +34,19 @@ const article = defineCollection({
         subtitle: z.string(),
       })
       .optional(),
-    faqs: z.array(z.object({
-      question: z.string(),
-      answer: z.string(),
-    })).default([]),
-    schemaType: z.enum(['article', 'howto', 'glossary', 'product']).default('article'),
+    faqs: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        }),
+      )
+      .default([]),
+    schemaType: z
+      .enum(['article', 'howto', 'glossary', 'product', 'review', 'faq'])
+      .default('article'),
+    rating: z.number().min(1).max(5).optional(),
+    ratingCount: z.number().optional(),
   }),
 })
 

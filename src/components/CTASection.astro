@@ -15,12 +15,14 @@ const utm = `utm_source=learn&utm_medium=article&utm_campaign=${slug}`
   <div class="flex gap-3 flex-wrap">
     <a
       href={`https://ucards.uk/?${utm}`}
+      data-agent-brand-cta={`/?${utm}`}
       class="inline-flex items-center px-5 py-2.5 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
     >
       Open Card &rarr;
     </a>
     <a
       href={`https://ucards.uk/compare/virtual-cards?${utm}`}
+      data-agent-brand-cta={`/compare/virtual-cards?${utm}`}
       class="inline-flex items-center px-5 py-2.5 bg-white text-blue-600 font-medium rounded-lg border border-blue-300 hover:bg-blue-50 transition-colors"
     >
       Compare Cards

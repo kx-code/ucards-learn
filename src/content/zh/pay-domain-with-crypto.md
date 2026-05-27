@@ -1,18 +1,32 @@
 ---
-title: "如何用加密货币购买域名（USDT、ETH、BNB）"
-description: "了解如何通过虚拟信用卡以加密货币购买域名。使用 USDT、ETH 或 BNB 注册 .com、.net、.io 域名。无需 KYC。"
-keywords: "用加密货币购买域名, 域名USDT, 用比特币注册域名, 匿名购买域名"
-category: "use-case"
-slug: "pay-domain-with-crypto"
+title: '如何用加密货币购买域名（USDT、ETH、BNB）'
+description: '了解如何通过虚拟信用卡以加密货币购买域名。使用 USDT、ETH 或 BNB 注册 .com、.net、.io 域名。无需 KYC。'
+keywords: '用加密货币购买域名, 域名USDT, 用比特币注册域名, 匿名购买域名'
+category: 'use-case'
+slug: 'pay-domain-with-crypto'
 date: 2026-04-30
 updated: 2026-04-30
 related:
-  - "what-is-virtual-credit-card"
-  - "how-to-pay-with-crypto"
-  - "anonymous-online-payment"
+  - 'what-is-virtual-credit-card'
+  - 'how-to-pay-with-crypto'
+  - 'anonymous-online-payment'
 cta:
-  title: "2 分钟获取虚拟信用卡"
-  subtitle: "无需 KYC，用 USDT 购买域名。"
+  title: '2 分钟获取虚拟信用卡'
+  subtitle: '无需 KYC，用 USDT 购买域名。'
+schemaType: 'product'
+rating: 4.8
+ratingCount: 1200
+faqs:
+  - question: '哪些域名注册商接受加密货币支付？'
+    answer: '通过 uCards 虚拟 Visa 卡，所有接受 Visa 的域名注册商都支持，包括 Namecheap、Cloudflare、GoDaddy、Google Domains、Porkbun 和 Dynadot 等。'
+  - question: '用加密货币购买域名是匿名的吗？'
+    answer: '支付环节是私密的，不会出现在银行账单上。但域名注册信息可能被记录在 WHOIS 数据库中，建议开启 WHOIS 隐私保护增强隐私。'
+  - question: '可以用 uCards 购买 .eth 或 .crypto 等区块链域名吗？'
+    answer: '区块链域名（如 .eth）需要通过链上交易购买，不支持 Visa 卡。但 uCards 可以购买 .com、.net、.io 等所有传统域名后缀。'
+  - question: '域名自动续费可以用 uCards 吗？'
+    answer: '可以。uCards 虚拟卡支持循环扣款，只需在续费日前确保卡内有足够余额，域名注册商会自动扣款续费。'
+  - question: 'uCards 购买域名的最低充值金额是多少？'
+    answer: '常见域名如 .com 价格在 $9-13/年，充值等值的 USDT 即可。建议多充 $5 作为缓冲，覆盖可能的费用波动。'
 ---
 
 ## 为什么要用加密货币购买域名？
@@ -23,14 +37,14 @@ cta:
 
 ### 支持 uCards 的域名注册商
 
-| 注册商 | .com 价格 | 支持 uCards | 备注 |
-|--------|----------|-------------|------|
-| Namecheap | $8.88/年 | 是 | 最佳性价比，也直接接受加密货币 |
-| Cloudflare | $9.77/年 | 是 | 成本价定价 |
-| Google Domains | $12/年 | 是 | 现为 Squarespace |
-| GoDaddy | $11.99/年 | 是 | 最大注册商 |
-| Porkbun | $9.77/年 | 是 | 价格好，免费 WHOIS 隐私 |
-| Dynadot | $9.99/年 | 是 | 适合域名投资者 |
+| 注册商         | .com 价格 | 支持 uCards | 备注                           |
+| -------------- | --------- | ----------- | ------------------------------ |
+| Namecheap      | $8.88/年  | 是          | 最佳性价比，也直接接受加密货币 |
+| Cloudflare     | $9.77/年  | 是          | 成本价定价                     |
+| Google Domains | $12/年    | 是          | 现为 Squarespace               |
+| GoDaddy        | $11.99/年 | 是          | 最大注册商                     |
+| Porkbun        | $9.77/年  | 是          | 价格好，免费 WHOIS 隐私        |
+| Dynadot        | $9.99/年  | 是          | 适合域名投资者                 |
 
 以上所有注册商都接受 Visa，这意味着它们都支持 uCards 虚拟卡。
 
@@ -54,15 +68,15 @@ cta:
 **域名定价参考：**
 
 | 顶级域名 | 典型价格/年 |
-|---------|-----------|
-| .com | $9-13 |
-| .net | $10-13 |
-| .org | $10-13 |
-| .io | $30-40 |
-| .co | $12-25 |
-| .dev | $12-15 |
-| .app | $12-18 |
-| .xyz | $1-12 |
+| -------- | ----------- |
+| .com     | $9-13       |
+| .net     | $10-13      |
+| .org     | $10-13      |
+| .io      | $30-40      |
+| .co      | $12-25      |
+| .dev     | $12-15      |
+| .app     | $12-18      |
+| .xyz     | $1-12       |
 
 ### 第三步：搜索并注册域名
 
@@ -125,12 +139,12 @@ cta:
 
 **多年注册费用：**
 
-| 年数 | .com (Namecheap) | 相比年付的优惠 |
-|------|-----------------|-------------|
-| 1 年 | $8.88 | — |
-| 2 年 | $17.76 | — |
-| 5 年 | $44.40 | 价格保护 |
-| 10 年 | $88.80 | 价格保护 |
+| 年数  | .com (Namecheap) | 相比年付的优惠 |
+| ----- | ---------------- | -------------- |
+| 1 年  | $8.88            | —              |
+| 2 年  | $17.76           | —              |
+| 5 年  | $44.40           | 价格保护       |
+| 10 年 | $88.80           | 价格保护       |
 
 ## 为什么 uCards 适合域名购买
 

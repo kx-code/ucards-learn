@@ -1,25 +1,28 @@
 ---
-title: "Virtual Credit Card in Colombia 2026: Crypto Card Guide"
-description: "Guide to getting a virtual credit card in Colombia. Pay for international services, online shopping, and subscriptions with cryptocurrency. No KYC required."
-keywords: "virtual card colombia, tarjeta virtual colombia, crypto card colombia, tarjeta credito virtual colombia, usdt colombia"
-category: "country"
-slug: "virtual-card-colombia"
+title: 'Virtual Credit Card in Colombia 2026: Crypto Card Guide'
+description: 'Guide to getting a virtual credit card in Colombia. Pay for international services, online shopping, and subscriptions with cryptocurrency. No KYC required.'
+keywords: 'virtual card colombia, tarjeta virtual colombia, crypto card colombia, tarjeta credito virtual colombia, usdt colombia'
+category: 'country'
+slug: 'virtual-card-colombia'
 date: 2026-05-16
 updated: 2026-05-16
 related:
-  - "virtual-card-mexico"
-  - "virtual-card-argentina"
-  - "virtual-card-brazil"
+  - 'virtual-card-mexico'
+  - 'virtual-card-argentina'
+  - 'virtual-card-brazil'
 cta:
-  title: "Get a Colombia Virtual Card in 2 Minutes"
-  subtitle: "No KYC required. Pay with USDT."
+  title: 'Get a Colombia Virtual Card in 2 Minutes'
+  subtitle: 'No KYC required. Pay with USDT.'
 faqs:
-  - question: "Can I get a virtual card in Colombia without cedula?"
+  - question: 'Can I get a virtual card in Colombia without cedula?'
     answer: "Yes. Crypto-funded virtual cards like uCards don't require Colombian ID (cedula) or a local bank account. You only need an email and crypto to get started."
-  - question: "Can I pay for Netflix from Colombia with a virtual card?"
-    answer: "Yes. Virtual cards work perfectly for Netflix Colombia and all other streaming services. The card works as a regular Visa/Mastercard for international payments."
+  - question: 'Can I pay for Netflix from Colombia with a virtual card?'
+    answer: 'Yes. Virtual cards work perfectly for Netflix Colombia and all other streaming services. The card works as a regular Visa/Mastercard for international payments.'
   - question: "What's the best crypto to use in Colombia?"
-    answer: "USDT on TRON is recommended due to low fees (~1 USDT per transaction) and fast confirmation. You can buy USDT on Binance, Bitso, or other exchanges with COP."
+    answer: 'USDT on TRON is recommended due to low fees (~1 USDT per transaction) and fast confirmation. You can buy USDT on Binance, Bitso, or other exchanges with COP.'
+schemaType: 'product'
+rating: 4.8
+ratingCount: 1200
 ---
 
 ## Why Colombians Need Virtual Credit Cards
@@ -44,15 +47,15 @@ Colombia is one of Latin America's most active cryptocurrency markets:
 
 ## Colombian Bank Cards vs Crypto Virtual Cards
 
-| Feature | Colombian Bank Card | Crypto Virtual Card (uCards) |
-|---------|-------------------|------------------------------|
+| Feature                  | Colombian Bank Card       | Crypto Virtual Card (uCards)  |
+| ------------------------ | ------------------------- | ----------------------------- |
 | International acceptance | Often requires activation | Accepted worldwide by default |
-| Setup time | Days + branch visit | Under 5 minutes |
-| KYC required | Cedula + bank application | None |
-| Foreign transaction fee | 3-5% markup | None (USDT is USD-pegged) |
-| Monthly fees | COP 10,000-30,000+ | No monthly fee |
-| Spending limits | Bank-imposed caps | Based on your balance |
-| Funding method | COP bank transfer | USDT on TRON/ETH/BSC |
+| Setup time               | Days + branch visit       | Under 5 minutes               |
+| KYC required             | Cedula + bank application | None                          |
+| Foreign transaction fee  | 3-5% markup               | None (USDT is USD-pegged)     |
+| Monthly fees             | COP 10,000-30,000+        | No monthly fee                |
+| Spending limits          | Bank-imposed caps         | Based on your balance         |
+| Funding method           | COP bank transfer         | USDT on TRON/ETH/BSC          |
 
 ## How to Get a Virtual Card from Colombia
 
@@ -64,13 +67,13 @@ Visit uCards and sign up with an email address or crypto wallet. No cedula, no c
 
 Purchase USDT on a Colombian-friendly exchange:
 
-| Exchange | COP Funding Method | Fee |
-|----------|-------------------|-----|
-| Binance | PSE transfer, credit card | 0.1% trading fee |
-| Bitso | PSE transfer, Bancolombia | 0.5-1% spread |
-| Buda | PSE transfer, Bancolombia, Davivienda | 0.8% |
-| TRASTEA | Bank transfer | 1% |
-| P2P platforms | Nequi, Daviplata, bank transfer | Varies |
+| Exchange      | COP Funding Method                    | Fee              |
+| ------------- | ------------------------------------- | ---------------- |
+| Binance       | PSE transfer, credit card             | 0.1% trading fee |
+| Bitso         | PSE transfer, Bancolombia             | 0.5-1% spread    |
+| Buda          | PSE transfer, Bancolombia, Davivienda | 0.8%             |
+| TRASTEA       | Bank transfer                         | 1%               |
+| P2P platforms | Nequi, Daviplata, bank transfer       | Varies           |
 
 ### Step 3: Transfer USDT to uCards
 
@@ -114,11 +117,11 @@ Colombian freelancers on Upwork, Fiverr, and Toptal often receive crypto payment
 
 For a typical Colombian professional with $80/month in international subscriptions:
 
-| Payment Method | Monthly Cost (USD equivalent) | Annual Total |
-|---------------|-------------------------------|-------------|
-| Colombian card (4% FX markup) | $83.20 | $998.40 |
-| Colombian card (5% FX markup) | $84.00 | $1,008.00 |
-| uCards virtual card (TRON) | $80.00 + ~$0.50 fee | ~$966 |
+| Payment Method                | Monthly Cost (USD equivalent) | Annual Total |
+| ----------------------------- | ----------------------------- | ------------ |
+| Colombian card (4% FX markup) | $83.20                        | $998.40      |
+| Colombian card (5% FX markup) | $84.00                        | $1,008.00    |
+| uCards virtual card (TRON)    | $80.00 + ~$0.50 fee           | ~$966        |
 
 Savings: **$32-42 per year** just from avoiding foreign transaction fees — and more if you factor in the inconvenience of declined transactions and bank restrictions.
 

@@ -17,7 +17,11 @@ export default {
       url.pathname = '/learn/'
     }
     // 静态资源：去掉 /learn 前缀
-    else if (path.startsWith('/learn/_astro') || path.startsWith('/learn/favicon') || path.includes('.')) {
+    else if (
+      path.startsWith('/learn/_astro') ||
+      path.startsWith('/learn/favicon') ||
+      path.includes('.')
+    ) {
       url.pathname = path.replace('/learn', '')
     }
     // 文章页面：去掉 /learn 前缀，确保有结尾斜杠

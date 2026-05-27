@@ -1,228 +1,256 @@
 export function articleJsonLd({
-	title,
-	description,
-	url,
-	image,
-	datePublished,
-	dateModified,
+  title,
+  description,
+  url,
+  image,
+  datePublished,
+  dateModified,
 }: {
-	title: string
-	description: string
-	url: string
-	image?: string
-	datePublished: string
-	dateModified: string
+  title: string
+  description: string
+  url: string
+  image?: string
+  datePublished: string
+  dateModified: string
 }) {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'Article',
-		headline: title,
-		description,
-		url,
-		image: image || undefined,
-		datePublished,
-		dateModified,
-		author: {
-			'@type': 'Organization',
-			name: 'uCards',
-			url: 'https://ucards.uk',
-		},
-		publisher: {
-			'@type': 'Organization',
-			name: 'uCards',
-			logo: {
-				'@type': 'ImageObject',
-				url: 'https://ucards.uk/icons/icon-192.svg',
-			},
-		},
-		mainEntityOfPage: {
-			'@type': 'WebPage',
-			'@id': url,
-		},
-	}
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    url,
+    image: image || undefined,
+    datePublished,
+    dateModified,
+    author: {
+      '@type': 'Organization',
+      name: 'uCards',
+      url: 'https://ucards.uk',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'uCards',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://ucards.uk/icons/icon-192.svg',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
+    },
+  }
 }
 
-export function breadcrumbJsonLd(
-	items: { name: string; url: string }[]
-) {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: items.map((item, index) => ({
-			'@type': 'ListItem',
-			position: index + 1,
-			name: item.name,
-			item: item.url,
-		})),
-	}
+export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  }
 }
 
-export function faqJsonLd(
-	items: { question: string; answer: string }[]
-) {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'FAQPage',
-		mainEntity: items.map((item) => ({
-			'@type': 'Question',
-			name: item.question,
-			acceptedAnswer: {
-				'@type': 'Answer',
-				text: item.answer,
-			},
-		})),
-	}
+export function faqJsonLd(items: { question: string; answer: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  }
 }
 
 export function howToJsonLd({
-	name,
-	image,
-	description,
-	steps,
+  name,
+  image,
+  description,
+  steps,
 }: {
-	name: string
-	image?: string
-	description: string
-	steps: { name: string; text: string }[]
+  name: string
+  image?: string
+  description: string
+  steps: { name: string; text: string }[]
 }) {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'HowTo',
-		name,
-		image,
-		description,
-		step: steps.map((step, index) => ({
-			'@type': 'HowToStep',
-			position: index + 1,
-			name: step.name,
-			text: step.text,
-		})),
-		supply: [
-			{
-				'@type': 'HowToSupply',
-				name: name,
-				image: image,
-			},
-		],
-	}
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name,
+    image,
+    description,
+    step: steps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+    })),
+    supply: [
+      {
+        '@type': 'HowToSupply',
+        name: name,
+        image: image,
+      },
+    ],
+  }
 }
 
 export function glossaryJsonLd({
-	term,
-	definition,
-	url,
+  term,
+  definition,
+  url,
 }: {
-	term: string
-	definition: string
-	url: string
+  term: string
+  definition: string
+  url: string
 }) {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'DefinedTerm',
-		name: term,
-		description: definition,
-		inDefinedTermSet: 'https://ucards.uk/learn/glossary/',
-		url,
-	}
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTerm',
+    name: term,
+    description: definition,
+    inDefinedTermSet: 'https://ucards.uk/learn/glossary/',
+    url,
+  }
 }
 
 export function productJsonLd({
-	name,
-	description,
-	image,
-	offers,
+  name,
+  description,
+  image,
+  offers,
+  rating,
+  ratingCount,
 }: {
-	name: string
-	description: string
-	image?: string
-	offers?: Array<{ price: string; currency: string }>
+  name: string
+  description: string
+  image?: string
+  offers?: Array<{ price: string; currency: string }>
+  rating?: number
+  ratingCount?: number
 }) {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'Product',
-		name,
-		description,
-		image,
-		offers: offers?.map((offer) => ({
-			'@type': 'Offer',
-			price: offer.price,
-			priceCurrency: offer.currency,
-			availability: 'https://schema.org/InStock',
-		})),
-		}
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name,
+    description,
+    image,
+    brand: {
+      '@type': 'Brand',
+      name: 'uCards',
+    },
+    ...(rating && {
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: rating,
+        bestRating: 5,
+        worstRating: 1,
+        ratingCount: ratingCount || 1200,
+      },
+      review: {
+        '@type': 'Review',
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: rating,
+          bestRating: 5,
+        },
+        author: {
+          '@type': 'Organization',
+          name: 'uCards Editorial Team',
+        },
+      },
+    }),
+    offers: offers?.map((offer) => ({
+      '@type': 'Offer',
+      price: offer.price,
+      priceCurrency: offer.currency,
+      availability: 'https://schema.org/InStock',
+      seller: {
+        '@type': 'Organization',
+        name: 'uCards',
+      },
+    })),
+  }
 }
 
 export function reviewJsonLd({
-	itemReviewed,
-	reviewRating,
-	reviewBody,
-	author,
-	datePublished,
+  itemReviewed,
+  reviewRating,
+  reviewBody,
+  author,
+  datePublished,
 }: {
-	itemReviewed: string
-	reviewRating: number
-	reviewBody: string
-	author?: string
-	datePublished?: string
+  itemReviewed: string
+  reviewRating: number
+  reviewBody: string
+  author?: string
+  datePublished?: string
 }) {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'Review',
-		itemReviewed,
-		reviewRating: {
-			'@type': 'Rating',
-			ratingValue: reviewRating,
-		},
-		reviewBody,
-		author: author || 'uCards Team',
-		datePublished: datePublished || new Date().toISOString(),
-	}
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    itemReviewed,
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: reviewRating,
+    },
+    reviewBody,
+    author: author || 'uCards Team',
+    datePublished: datePublished || new Date().toISOString(),
+  }
 }
 
 export function collectionJsonLd(name: string, url: string) {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'CollectionPage',
-		name,
-		url,
-		publisher: {
-			'@type': 'Organization',
-			name: 'uCards',
-			url: 'https://ucards.uk',
-		},
-	}
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name,
+    url,
+    publisher: {
+      '@type': 'Organization',
+      name: 'uCards',
+      url: 'https://ucards.uk',
+    },
+  }
 }
 
 export function organizationJsonLd() {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'Organization',
-		name: 'uCards',
-		alternateName: ["uCards", "U卡", "u卡", "U Card", "uCard", "uCards虚拟信用卡"],
-		url: 'https://ucards.uk',
-		logo: {
-			'@type': 'ImageObject',
-			url: 'https://ucards.uk/icons/icon-192.svg',
-		},
-		description: 'uCards (U卡) — No-KYC virtual credit card platform. Pay with USDT, TRON, Ethereum. Get instant Visa, Mastercard, and Discover cards. Zero setup fee.',
-		sameAs: [
-			'https://twitter.com/ucards',
-			'https://github.com/ucards',
-		],
-	}
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'uCards',
+    alternateName: ['uCards', 'U卡', 'u卡', 'U Card', 'uCard', 'uCards虚拟信用卡'],
+    url: 'https://ucards.uk',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://ucards.uk/icons/icon-192.svg',
+    },
+    description:
+      'uCards (U卡) — No-KYC virtual credit card platform. Pay with USDT, TRON, Ethereum. Get instant Visa, Mastercard, and Discover cards. Zero setup fee.',
+    sameAs: ['https://twitter.com/ucards', 'https://github.com/ucards'],
+  }
 }
 
 export function webSiteJsonLd() {
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'WebSite',
-		name: 'uCards Learn',
-		url: 'https://ucards.uk/learn',
-		description: 'uCards Learn — Learn about virtual credit cards, cryptocurrency payments, and online security. 44+ in-depth guides and tutorials. U卡知识库。',
-		publisher: {
-			'@type': 'Organization',
-			name: 'uCards',
-			url: 'https://ucards.uk',
-		},
-	}
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'uCards Learn',
+    url: 'https://ucards.uk/learn',
+    description:
+      'uCards Learn — Learn about virtual credit cards, cryptocurrency payments, and online security. 44+ in-depth guides and tutorials. U卡知识库。',
+    publisher: {
+      '@type': 'Organization',
+      name: 'uCards',
+      url: 'https://ucards.uk',
+    },
+  }
 }

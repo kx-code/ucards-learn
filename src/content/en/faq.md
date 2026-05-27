@@ -1,18 +1,18 @@
 ---
-title: "Virtual Card FAQ: 20 Common Questions Answered in 2026"
-description: "Frequently asked questions about virtual credit cards and crypto payments. Learn about fees, safety, KYC requirements, supported cryptos, and more."
-keywords: "virtual card faq, crypto card questions, virtual card guide, crypto payment faq, ucard, ucards, u card"
-category: "resource"
-slug: "faq"
+title: 'Virtual Card FAQ: 20 Common Questions Answered in 2026'
+description: 'Frequently asked questions about virtual credit cards and crypto payments. Learn about fees, safety, KYC requirements, supported cryptos, and more.'
+keywords: 'virtual card faq, crypto card questions, virtual card guide, crypto payment faq, ucard, ucards, u card'
+category: 'resource'
+slug: 'faq'
 date: 2026-04-30
 updated: 2026-04-30
 related:
-  - "what-is-virtual-credit-card"
-  - "crypto-without-kyc"
-  - "glossary"
+  - 'what-is-virtual-credit-card'
+  - 'crypto-without-kyc'
+  - 'glossary'
 cta:
-  title: "Still Have Questions?"
-  subtitle: "Get your virtual card in minutes and see for yourself — no KYC, no hassle."
+  title: 'Still Have Questions?'
+  subtitle: 'Get your virtual card in minutes and see for yourself — no KYC, no hassle.'
 ---
 
 ## Virtual Card & Crypto Payment FAQ

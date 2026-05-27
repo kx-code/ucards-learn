@@ -1,0 +1,91 @@
+---
+// AgentBranding — client-side branding injection for agent domains
+// On agent domains, replaces DOM elements marked with data-agent-brand attributes
+---
+<script is:inline>
+(function() {
+  var MAIN_HOSTS = ['ucards.uk', 'master.vcard-dfm.pages.dev', 'localhost'];
+  var host = location.hostname;
+  if (MAIN_HOSTS.some(function(h) { return host === h || host.endsWith('.' + h); })) return;
+
+  // --- Sanitizers (Rule #64: user-controllable content must be validated before DOM injection) ---
+  function isValidUrl(val) {
+    if (!val || typeof val !== 'string') return false;
+    var t = val.trim();
+    return /^https?:\/\//i.test(t);
+  }
+  function safeUrl(val, fallback) {
+    return isValidUrl(val) ? val.trim() : fallback;
+  }
+  function isValidEmail(val) {
+    if (!val || typeof val !== 'string') return false;
+    var t = val.trim();
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(t) && !/[\r\n]/.test(t);
+  }
+
+  var SUPABASE_URL = 'https://sugzexsdjhsqjwxvrhkk.supabase.co';
+  var ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN1Z3pleHNkamhzcWp3eHZyaGtrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ1OTk0MDUsImV4cCI6MjA1MDE3NTQwNX0.KsSWq0j_DvBqGKUVN1a9-VNM4hMRq1iHCDbq7XPjfGo';
+
+  var domain = host;
+
+  fetch(SUPABASE_URL + '/rest/v1/rpc/get_public_agent_config', {
+    method: 'POST',
+    headers: {
+      'apikey': ANON_KEY,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ p_domain: domain })
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(config) {
+    if (!config || !config.display_name) return;
+
+    var name = config.display_name || 'uCards';
+    var url = safeUrl(config.site_url, 'https://ucards.uk');
+    var logo = isValidUrl(config.logo_url) ? config.logo_url.trim() : null;
+
+    // Replace site-name text nodes (preserving child elements like "Learn" span)
+    document.querySelectorAll('[data-agent-brand="site-name"]').forEach(function(el) {
+      var firstText = el.childNodes[0];
+      if (firstText && firstText.nodeType === 3) {
+        firstText.textContent = firstText.textContent.replace(/uCards/g, name);
+      } else {
+        el.textContent = name;
+      }
+    });
+
+    // Replace href on links (only after protocol validation)
+    document.querySelectorAll('[data-agent-brand="site-url"]').forEach(function(el) {
+      if (el.tagName === 'A') el.href = url;
+    });
+
+    // Replace logo images (only after protocol validation)
+    if (logo) {
+      document.querySelectorAll('[data-agent-brand="logo"]').forEach(function(el) {
+        if (el.tagName === 'IMG') el.src = logo;
+      });
+    }
+
+    // Replace copyright text
+    document.querySelectorAll('[data-agent-brand="copyright"]').forEach(function(el) {
+      el.textContent = el.textContent.replace(/uCards/g, name);
+    });
+
+    // Replace CTA links with agent site URL prefix (avoid double-slash)
+    document.querySelectorAll('[data-agent-brand-cta]').forEach(function(el) {
+      var base = el.getAttribute('data-agent-brand-cta') || '';
+      var sep = (base.charAt(0) === '/' || base.charAt(0) === '?') ? '' : '/';
+      el.href = url + sep + base;
+    });
+
+    // Replace nav links pointing to ucards.uk
+    document.querySelectorAll('[data-agent-brand="nav-link"]').forEach(function(el) {
+      if (el.tagName === 'A') {
+        el.href = url;
+        el.textContent = el.textContent.replace(/uCards/g, name);
+      }
+    });
+  })
+  .catch(function() {});
+})();
+</script>

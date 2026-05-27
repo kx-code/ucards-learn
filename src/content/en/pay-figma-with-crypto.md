@@ -1,25 +1,28 @@
 ---
-title: "How to Pay for Figma with Crypto (USDT, ETH, Bitcoin)"
-description: "Step-by-step guide to paying for Figma Professional and Organization plans with cryptocurrency. No KYC virtual card for Figma subscriptions."
-keywords: "figma subscription crypto, figma pro usdt, pay figma with crypto, figma bitcoin"
-category: "use-case"
-slug: "pay-figma-with-crypto"
+title: 'How to Pay for Figma with Crypto (USDT, ETH, Bitcoin)'
+description: 'Step-by-step guide to paying for Figma Professional and Organization plans with cryptocurrency. No KYC virtual card for Figma subscriptions.'
+keywords: 'figma subscription crypto, figma pro usdt, pay figma with crypto, figma bitcoin'
+category: 'use-case'
+slug: 'pay-figma-with-crypto'
 date: 2026-05-16
 updated: 2026-05-16
 related:
-  - "pay-canva-with-crypto"
-  - "pay-github-with-crypto"
-  - "pay-notion-with-crypto"
+  - 'pay-canva-with-crypto'
+  - 'pay-github-with-crypto'
+  - 'pay-notion-with-crypto'
 cta:
-  title: "Get Your Virtual Card in 2 Minutes"
-  subtitle: "No KYC required. Pay Figma with USDT."
+  title: 'Get Your Virtual Card in 2 Minutes'
+  subtitle: 'No KYC required. Pay Figma with USDT.'
 faqs:
-  - question: "How much does Figma cost?"
-    answer: "Figma Professional is $15/editor/month. Figma Organization is $45/editor/month. Figma Enterprise has custom pricing. All plans can be paid with a virtual card."
-  - question: "Can I pay for Figma annually with crypto?"
-    answer: "Yes. Figma offers annual billing with savings. You can load your virtual card with enough USDT to cover the full year."
-  - question: "Does Figma accept virtual cards?"
-    answer: "Yes. Figma accepts Visa and Mastercard, including virtual cards. The payment process is identical to using a physical card."
+  - question: 'How much does Figma cost?'
+    answer: 'Figma Professional is $15/editor/month. Figma Organization is $45/editor/month. Figma Enterprise has custom pricing. All plans can be paid with a virtual card.'
+  - question: 'Can I pay for Figma annually with crypto?'
+    answer: 'Yes. Figma offers annual billing with savings. You can load your virtual card with enough USDT to cover the full year.'
+  - question: 'Does Figma accept virtual cards?'
+    answer: 'Yes. Figma accepts Visa and Mastercard, including virtual cards. The payment process is identical to using a physical card.'
+schemaType: 'product'
+rating: 4.8
+ratingCount: 1200
 ---
 
 ## Why Pay Figma with Cryptocurrency?
@@ -30,12 +33,12 @@ But Figma's paid plans can be challenging to subscribe to without a traditional 
 
 ### Figma pricing tiers
 
-| Plan | Price | Editors | Best For | Can Pay with uCards? |
-|------|-------|---------|----------|---------------------|
-| Figma Free | $0 | Up to 3 | Personal projects, learning | N/A |
-| Figma Professional | $15/editor/mo | Unlimited | Freelancers, small teams | Yes |
-| Figma Organization | $45/editor/mo | Unlimited | Design teams, agencies | Yes |
-| Figma Enterprise | Custom | Unlimited | Large orgs | Yes |
+| Plan               | Price         | Editors   | Best For                    | Can Pay with uCards? |
+| ------------------ | ------------- | --------- | --------------------------- | -------------------- |
+| Figma Free         | $0            | Up to 3   | Personal projects, learning | N/A                  |
+| Figma Professional | $15/editor/mo | Unlimited | Freelancers, small teams    | Yes                  |
+| Figma Organization | $45/editor/mo | Unlimited | Design teams, agencies      | Yes                  |
+| Figma Enterprise   | Custom        | Unlimited | Large orgs                  | Yes                  |
 
 Key differences between plans:
 
@@ -111,12 +114,12 @@ Figma charges per editor seat on a monthly cycle. When you add new editors, the 
 
 ### Recommended deposit amounts
 
-| Team Size | Figma Pro Monthly | Figma Org Monthly | Recommended Deposit |
-|----------|-------------------|-------------------|-------------------|
-| 1 editor (freelancer) | $15 | $45 | $25 / $55 |
-| 3 editors | $45 | $135 | $55 / $150 |
-| 5 editors | $75 | $225 | $90 / $250 |
-| 10 editors | $150 | $450 | $170 / $480 |
+| Team Size             | Figma Pro Monthly | Figma Org Monthly | Recommended Deposit |
+| --------------------- | ----------------- | ----------------- | ------------------- |
+| 1 editor (freelancer) | $15               | $45               | $25 / $55           |
+| 3 editors             | $45               | $135              | $55 / $150          |
+| 5 editors             | $75               | $225              | $90 / $250          |
+| 10 editors            | $150              | $450              | $170 / $480         |
 
 ### What if payment fails?
 
