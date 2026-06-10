@@ -1,0 +1,115 @@
+---
+import { getCollection } from 'astro:content'
+import SEOHead from '../../../components/SEOHead.astro'
+import Footer from '../../../components/Footer.astro'
+import Breadcrumbs from '../../../components/Breadcrumbs.astro'
+import '../../../styles/global.css'
+
+export async function getStaticPaths() {
+  const ALL_CATEGORIES = {
+    tutorial: { label: "Tutorials", description: "Step-by-step guides for using virtual credit cards and crypto payments." },
+    "use-case": { label: "Use Cases", description: "Real-world scenarios where virtual credit cards shine." },
+    comparison: { label: "Comparisons", description: "Side-by-side comparisons of virtual card platforms." },
+    country: { label: "By Country", description: "Virtual credit card guides by region." },
+    brand: { label: "By Brand", description: "Visa, Mastercard, and Discover virtual card guides." },
+    education: { label: "Crypto Education", description: "Learn about cryptocurrency and blockchain payments." },
+    resource: { label: "Resources", description: "Helpful resources and reference guides." },
+    ranking: { label: "Rankings", description: "Ranked lists of the best virtual credit cards." },
+    alternative: { label: "Alternatives", description: "Alternatives to popular payment platforms." },
+  }
+  const articles = await getCollection('article', ({ id }) => id.startsWith('en/'))
+  return Object.entries(ALL_CATEGORIES).map(([key, cat]) => ({
+    params: { category: key },
+    props: {
+      categoryKey: key,
+      category: cat,
+      articles: articles.filter((a) => a.data.category === key).sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
+      otherCategories: Object.entries(ALL_CATEGORIES).filter(([k]) => k !== key),
+    },
+  }))
+}
+
+const { categoryKey, category, articles, otherCategories } = Astro.props
+
+const breadcrumbItems = [
+  { name: 'Learn', url: 'https://ucards.uk/learn/en/' },
+  { name: category.label, url: `https://ucards.uk/learn/en/category/${categoryKey}` },
+]
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <SEOHead
+      title={`${category.label} — uCards Learn`}
+      description={category.description}
+      keywords={`virtual credit card, ${category.label.toLowerCase()}, crypto payment`}
+      path={`/en/category/${categoryKey}`}
+      lang="en"
+      jsonLd={{
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: `${category.label} — uCards Learn`,
+        description: category.description,
+        url: `https://ucards.uk/learn/en/category/${categoryKey}`,
+        mainEntity: {
+          '@type': 'ItemList',
+          numberOfItems: articles.length,
+          itemListElement: articles.slice(0, 10).map((a, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `https://ucards.uk/learn/en/${a.data.slug}`,
+            name: a.data.title,
+          })),
+        },
+      }}
+    />
+  </head>
+  <body class="min-h-screen bg-white text-gray-900">
+    <header class="border-b border-gray-100">
+      <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/learn/en/" class="text-xl font-bold text-blue-600">uCards <span class="text-gray-400 font-normal text-base">Learn</span></a>
+        <nav class="flex gap-4 text-sm">
+          <a href="/learn/" class="text-gray-600 hover:text-blue-600">中文</a>
+          <a href="https://ucards.uk" class="text-gray-600 hover:text-blue-600">uCards</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+      <Breadcrumbs items={breadcrumbItems} />
+      <h1 class="text-3xl font-bold mb-2">{category.label}</h1>
+      <p class="text-gray-600 mb-8">{category.description}</p>
+
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {articles.map((article) => (
+          <a
+            href={`/learn/en/${article.data.slug}`}
+            class="block p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-sm transition-all"
+          >
+            <h2 class="font-medium text-gray-900 mb-1">{article.data.title}</h2>
+            <p class="text-sm text-gray-500 line-clamp-2">{article.data.description}</p>
+          </a>
+        ))}
+      </div>
+
+      <section class="mt-12 pt-8 border-t border-gray-200">
+        <h2 class="text-lg font-bold text-gray-900 mb-4">Other Categories</h2>
+        <div class="flex flex-wrap gap-2">
+          {otherCategories.map(([key, cat]) => (
+            <a
+              href={`/learn/en/category/${key}`}
+              class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition-colors"
+            >
+              {cat.label}
+            </a>
+          ))}
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>

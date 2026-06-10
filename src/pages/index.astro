@@ -75,9 +75,17 @@ const jsonLd = collectionJsonLd('uCards Learn', 'https://ucards.uk/learn/')
       <h1 class="text-3xl font-bold mb-2">学习中心</h1>
       <p class="text-gray-600 mb-8">虚拟信用卡和加密货币支付完全指南</p>
 
-      {Object.values(grouped).map(({ label, items }) => (
+      <nav class="flex flex-wrap gap-2 mb-8">
+        {Object.entries(grouped).map(([key, { label }]) => (
+          <a href={"/learn/category/" + key} class="px-3 py-1.5 bg-gray-100 rounded-full text-sm font-medium text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition-colors">{label}</a>
+        ))}
+      </nav>
+
+      {Object.entries(grouped).map(([key, { label, items }]) => (
         <section class="mb-10">
-          <h2 class="text-xl font-bold mb-4 text-gray-800">{label}</h2>
+          <h2 class="text-xl font-bold mb-4 text-gray-800">
+            <a href={"/learn/category/" + key} class="hover:text-blue-600 transition-colors">{label}</a>
+          </h2>
           <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((article) => (
               <a

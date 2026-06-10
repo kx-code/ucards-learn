@@ -120,7 +120,7 @@ const breadcrumbItems = [
         slug={slug}
       />
       {related && related.length > 0 && (
-        <RelatedPosts slugs={related} lang={lang} />
+        <RelatedPosts slugs={related || []} lang={lang} category={category} currentSlug={slug} />
       )}
     </main>
 
