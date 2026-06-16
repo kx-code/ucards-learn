@@ -28,9 +28,10 @@ interface Props {
   schemaType?: 'article' | 'howto' | 'glossary' | 'product' | 'review' | 'faq'
   rating?: number
   ratingCount?: number
+  howtoSteps?: { name: string; text: string }[]
 }
 
-const { title, description, keywords, slug, lang, date, updated, image, related, cta, category, faqs = [], schemaType = 'article', rating, ratingCount } = Astro.props
+const { title, description, keywords, slug, lang, date, updated, image, related, cta, category, faqs = [], schemaType = 'article', rating, ratingCount, howtoSteps = [] } = Astro.props
 
 const langPath = lang === 'en' ? `/en/${slug}` : `/${slug}`
 const jsonLd = articleJsonLd({
@@ -107,6 +108,7 @@ const breadcrumbItems = [
         schemaType={schemaType}
         rating={rating}
         ratingCount={ratingCount}
+        howtoSteps={howtoSteps}
       />
       <article class="prose">
         <slot />

@@ -70,6 +70,33 @@ export function faqJsonLd(items: { question: string; answer: string }[]) {
   }
 }
 
+/**
+ * Extract HowTo steps from rendered markdown headings.
+ * Matches H2 headings that look like procedural steps:
+ *   "第一步：...", "第1步 ...", "Step 1: ...", "步骤一 ...", "1. ..."
+ * Returns [] when no step-like headings found (non-tutorial articles).
+ */
+export function extractHowToSteps(
+  headings: { depth: number; text: string; slug: string }[],
+): { name: string; text: string }[] {
+  const stepPattern =
+    /^(第[一二三四五六七八九十百\d]+步|step\s*\d+|步骤\s*[一二三四五六七八九十\d]+|\d+[\.、)）])\s*[：:]?\s*(.*)/i
+  const steps: { name: string; text: string }[] = []
+  for (const h of headings) {
+    if (h.depth !== 2) continue
+    const match = h.text.trim().match(stepPattern)
+    if (match) {
+      const label = match[1]
+      const rest = (match[2] || '').trim()
+      steps.push({
+        name: rest ? `${label}：${rest}` : label,
+        text: rest || h.text,
+      })
+    }
+  }
+  return steps
+}
+
 export function howToJsonLd({
   name,
   image,

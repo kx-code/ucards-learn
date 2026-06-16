@@ -14,9 +14,10 @@ interface Props {
 	schemaType?: 'article' | 'howto' | 'glossary' | 'product' | 'review' | 'faq'
 	rating?: number
 	ratingCount?: number
+	howtoSteps?: { name: string; text: string }[]
 }
 
-const { title, description, slug, lang = 'en', date, updated, category, faqs = [], schemaType = 'article', rating, ratingCount } = Astro.props
+const { title, description, slug, lang = 'en', date, updated, category, faqs = [], schemaType = 'article', rating, ratingCount, howtoSteps = [] } = Astro.props
 
 const formatDate = (date: Date) => format(date, 'MMMM d, yyyy')
 const isoDate = (date: Date) => date.toISOString()
@@ -116,6 +117,7 @@ const brandDesc = lang === 'en'
 	<script type="application/ld+json" set:html={JSON.stringify(orgJsonLd)}></script>
 	<script type="application/ld+json" set:html={JSON.stringify(schemaJsonLd)}></script>
 	{faqJsonLdData && <script type="application/ld+json" set:html={JSON.stringify(faqJsonLdData)}></script>}
+	{howtoSteps.length > 0 && schemaType !== 'howto' && <script type="application/ld+json" set:html={JSON.stringify(howToJsonLd({ name: title, description, steps: howtoSteps }))}></script>}
 </div>
 
 <!-- About uCards brand block (visible to AI crawlers) -->

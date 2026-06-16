@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content'
 import ArticleLayout from '../../layouts/ArticleLayout.astro'
+import { extractHowToSteps } from '../../lib/seo'
 
 export async function getStaticPaths() {
   const articles = await getCollection('article', ({ id }) => id.startsWith('en/'))
@@ -11,7 +12,8 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props
-const { Content } = await render(article)
+const { Content, headings } = await render(article)
+const howtoSteps = article.data.category === 'tutorial' ? extractHowToSteps(headings) : []
 ---
 
 <ArticleLayout
@@ -30,6 +32,7 @@ const { Content } = await render(article)
   schemaType={article.data.schemaType}
   rating={article.data.rating}
   ratingCount={article.data.ratingCount}
+  howtoSteps={howtoSteps}
 >
   <Content />
 </ArticleLayout>
