@@ -7,7 +7,7 @@ slug: 'what-is-visa-virtual-card'
 date: 2026-05-20
 updated: 2026-05-20
 related:
-  - 'virtual-card-vs-physical-card'
+  - 'virtual-card-vs-physical'
   - 'what-is-mastercard-virtual-card'
   - 'best-virtual-credit-cards'
 cta:
@@ -397,4 +397,4 @@ Getting a Visa virtual card through uCards is the most convenient option: no KYC
 
 **Get your uCards Visa virtual card now:** [ucards.uk](https://ucards.uk/?utm_source=learn&utm_medium=article&utm_campaign=visa-virtual-card)
 
-**Recommended Reading:** [Mastercard Virtual Card Guide](/en/what-is-mastercard-virtual-card) | [Virtual Cards vs. Physical Cards](/en/virtual-card-vs-physical-card) | [Best Virtual Credit Cards Compared](/en/best-virtual-credit-cards)
+**Recommended Reading:** [Mastercard Virtual Card Guide](/learn/en/what-is-mastercard-virtual-card) | [Virtual Cards vs. Physical Cards](/learn/en/virtual-card-vs-physical) | [Best Virtual Credit Cards Compared](/learn/en/best-virtual-credit-cards)

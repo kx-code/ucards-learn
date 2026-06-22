@@ -285,6 +285,6 @@ Virtual cards are a payment revolution for the digital age. They are faster to o
 
 **Related articles:**
 
-- [How Virtual Credit Cards Work: A Deep Dive](/en/learn/virtual-card-how-it-works)
-- [Virtual Credit Cards: Pros and Cons Analyzed](/en/learn/virtual-card-pros-cons)
-- [The Complete Beginner's Guide to Virtual Credit Cards](/en/learn/virtual-card-for-beginners)
+- [How Virtual Credit Cards Work: A Deep Dive](/learn/en/virtual-card-how-it-works)
+- [Virtual Credit Cards: Pros and Cons Analyzed](/learn/en/virtual-card-pros-cons)
+- [The Complete Beginner's Guide to Virtual Credit Cards](/learn/en/virtual-card-for-beginners)

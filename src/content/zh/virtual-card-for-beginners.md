@@ -373,7 +373,7 @@ uCards 的资金安全保障：
 
 **推荐阅读**：
 
-- [如何购买 USDT](/zh/learn/how-to-buy-usdt)
-- [虚拟卡是什么？](/zh/learn/what-is-virtual-card)
-- [TRC20 转账指南](/zh/learn/what-is-trc20)
-- [没有银行账户怎么获得信用卡](/zh/learn/virtual-card-without-bank)
+- [如何购买 USDT](/learn/how-to-buy-usdt)
+- [虚拟卡是什么？](/learn/what-is-virtual-card)
+- [TRC20 转账指南](/learn/what-is-trc20)
+- [没有银行账户怎么获得信用卡](/learn/virtual-card-without-bank)

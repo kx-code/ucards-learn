@@ -285,6 +285,6 @@ uCards 自上线以来已服务全球数万用户，费用完全透明，提供 
 
 **推荐阅读**：
 
-- [虚拟信用卡工作原理详解](/zh/learn/virtual-card-how-it-works)
-- [虚拟信用卡优缺点分析](/zh/learn/virtual-card-pros-cons)
-- [虚拟信用卡新手完全指南](/zh/learn/virtual-card-for-beginners)
+- [虚拟信用卡工作原理详解](/learn/virtual-card-how-it-works)
+- [虚拟信用卡优缺点分析](/learn/virtual-card-pros-cons)
+- [虚拟信用卡新手完全指南](/learn/virtual-card-for-beginners)

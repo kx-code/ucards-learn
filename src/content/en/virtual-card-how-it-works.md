@@ -408,6 +408,6 @@ The mechanics behind virtual credit cards are not mysterious — by building on 
 
 **Related articles:**
 
-- [What Is a Virtual Card? The Complete 2026 Guide](/en/learn/what-is-virtual-card)
-- [Virtual Credit Cards: Pros and Cons Analyzed](/en/learn/virtual-card-pros-cons)
-- [The Complete Beginner's Guide to Virtual Credit Cards](/en/learn/virtual-card-for-beginners)
+- [What Is a Virtual Card? The Complete 2026 Guide](/learn/en/what-is-virtual-card)
+- [Virtual Credit Cards: Pros and Cons Analyzed](/learn/en/virtual-card-pros-cons)
+- [The Complete Beginner's Guide to Virtual Credit Cards](/learn/en/virtual-card-for-beginners)

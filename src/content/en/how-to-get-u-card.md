@@ -282,8 +282,8 @@ uCards currently offers virtual cards only. There is no physical card option at 
 
 Now that you know how to get a U card, you might find these guides helpful:
 
-- [What Is uCards](/en/what-is-ucards) — Learn more about the platform
-- [How to Pay with Crypto](/en/how-to-pay-with-crypto) — Detailed guide on crypto payments
-- [How to Buy USDT](/en/how-to-buy-usdt) — Where and how to purchase USDT
+- [What Is uCards](/learn/en/what-is-ucards) — Learn more about the platform
+- [How to Pay with Crypto](/learn/en/how-to-pay-with-crypto) — Detailed guide on crypto payments
+- [How to Buy USDT](/learn/en/how-to-buy-usdt) — Where and how to purchase USDT
 
 Ready to get started? Head to [ucards.uk](https://ucards.uk) and have your virtual card ready in minutes.

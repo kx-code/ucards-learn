@@ -285,8 +285,8 @@ No. The recharge fee rate varies by card type. Check the card details page for t
 
 For more information about uCards, check out these related guides:
 
-- [What Is uCards](/en/what-is-ucards) — Complete platform overview
-- [uCards Review](/en/ucards-review) — In-depth platform review
-- [Best Virtual Credit Cards](/en/best-virtual-credit-cards) — Compare uCards with alternatives
+- [What Is uCards](/learn/en/what-is-ucards) — Complete platform overview
+- [uCards Review](/learn/en/ucards-review) — In-depth platform review
+- [Best Virtual Credit Cards](/learn/en/best-virtual-credit-cards) — Compare uCards with alternatives
 
 For the most current pricing, visit [ucards.uk](https://ucards.uk) — all fees are displayed in real-time on the platform.

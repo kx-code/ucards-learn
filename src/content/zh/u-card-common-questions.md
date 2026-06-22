@@ -392,9 +392,9 @@ uCards 的费用结构非常简单透明：
 
 如果你在这 30 个问题中没有找到答案，可以：
 
-- 查看 [U卡新手入门教程](/zh/u-card-beginner-guide) — 从零开始的完整教程
-- 查看 [U卡是什么？完整科普指南](/zh/what-is-u-card) — 全面了解 U卡
-- 查看 [FAQ 页面](/zh/faq) — 更多常见问题
+- 查看 [U卡新手入门教程](/learn/u-card-beginner-guide) — 从零开始的完整教程
+- 查看 [U卡是什么？完整科普指南](/learn/what-is-u-card) — 全面了解 U卡
+- 查看 [FAQ 页面](/learn/faq) — 更多常见问题
 
 ---
 

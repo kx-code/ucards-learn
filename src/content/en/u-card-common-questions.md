@@ -389,9 +389,9 @@ Here is an overview of all 30 questions so you can find the answer you need at a
 
 If your question was not covered here, you can:
 
-- Read the [U Card Beginner's Guide](/en/u-card-beginner-guide) — a complete step-by-step tutorial
-- Read [What Is a U Card?](/en/what-is-u-card) — a comprehensive introduction
-- Check the [FAQ page](/en/faq) — more common questions and answers
+- Read the [U Card Beginner's Guide](/learn/en/u-card-beginner-guide) — a complete step-by-step tutorial
+- Read [What Is a U Card?](/learn/en/what-is-u-card) — a comprehensive introduction
+- Check the [FAQ page](/learn/en/faq) — more common questions and answers
 
 ---
 

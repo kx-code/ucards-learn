@@ -117,6 +117,6 @@ First, verify the transaction on a blockchain explorer using your transaction ha
 
 ## Still Have Questions?
 
-This FAQ covers the most common questions about virtual cards and crypto payments. For detailed explanations of specific terms, check our [crypto payment glossary](/en/resource/glossary). For a broader overview, read our guide on [what a virtual credit card is](/en/tutorial/what-is-virtual-credit-card).
+This FAQ covers the most common questions about virtual cards and crypto payments. For detailed explanations of specific terms, check our [crypto payment glossary](/learn/en/glossary). For a broader overview, read our guide on [what a virtual credit card is](/learn/en/what-is-virtual-credit-card).
 
 Ready to experience the convenience of a crypto-funded virtual card? Get started in minutes with no KYC required.

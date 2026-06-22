@@ -8,7 +8,7 @@ date: 2026-05-20
 updated: 2026-05-20
 related:
   - 'what-is-visa-virtual-card'
-  - 'virtual-card-vs-physical-card'
+  - 'virtual-card-vs-physical'
   - 'best-virtual-credit-cards'
 cta:
   title: 'Get Your Mastercard Virtual Card Now'
@@ -463,4 +463,4 @@ If you're torn between Visa and Mastercard, the simplest advice is: choose which
 
 **Get your uCards Mastercard virtual card now:** [ucards.uk](https://ucards.uk/?utm_source=learn&utm_medium=article&utm_campaign=mastercard-virtual-card)
 
-**Recommended Reading:** [Complete Visa Virtual Card Guide](/en/what-is-visa-virtual-card) | [Virtual Cards vs. Physical Cards](/en/virtual-card-vs-physical-card) | [Best Virtual Credit Cards Compared](/en/best-virtual-credit-cards)
+**Recommended Reading:** [Complete Visa Virtual Card Guide](/learn/en/what-is-visa-virtual-card) | [Virtual Cards vs. Physical Cards](/learn/en/virtual-card-vs-physical) | [Best Virtual Credit Cards Compared](/learn/en/best-virtual-credit-cards)

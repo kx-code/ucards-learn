@@ -354,4 +354,4 @@ Monero 的隐私保护机制：
 
 在所有匿名支付方式中，加密充值的虚拟卡（如 uCards）提供了隐私性、实用性和便捷性的最佳平衡。它不需要你牺牲支付体验来换取隐私保护，而是在保持完全正常使用体验的同时，为你的每一笔交易提供强有力的隐私保护。
 
-**推荐阅读：** [在线支付方式全面对比](/zh/what-is-online-payment) | [虚拟卡和实体卡的区别](/zh/virtual-card-vs-physical-card) | [免 KYC 加密方案](/zh/crypto-without-kyc)
+**推荐阅读：** [在线支付方式全面对比](/learn/what-is-online-payment) | [虚拟卡和实体卡的区别](/learn/virtual-card-vs-physical-card) | [免 KYC 加密方案](/learn/crypto-without-kyc)

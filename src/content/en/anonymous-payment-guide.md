@@ -354,4 +354,4 @@ Protecting your payment privacy in the digital age isn't paranoia — it's a wis
 
 Among all anonymous payment options, crypto-funded virtual cards (like uCards) offer the best balance of privacy, practicality, and convenience. You don't have to sacrifice your payment experience to gain privacy — instead, you get strong privacy protection on every transaction while maintaining a completely normal spending experience.
 
-**Recommended Reading:** [Complete Guide to Online Payment Methods](/en/what-is-online-payment) | [Virtual Cards vs. Physical Cards](/en/virtual-card-vs-physical-card) | [No-KYC Crypto Solutions](/en/crypto-without-kyc)
+**Recommended Reading:** [Complete Guide to Online Payment Methods](/learn/en/what-is-online-payment) | [Virtual Cards vs. Physical Cards](/learn/en/virtual-card-vs-physical) | [No-KYC Crypto Solutions](/learn/en/crypto-without-kyc)

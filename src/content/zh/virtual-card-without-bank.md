@@ -376,7 +376,7 @@ uCards 提供多种客服渠道：
 
 **推荐阅读**：
 
-- [虚拟卡是什么？2026年最全科普](/zh/learn/what-is-virtual-card)
-- [虚拟信用卡新手完全指南](/zh/learn/virtual-card-for-beginners)
-- [如何购买 USDT](/zh/learn/how-to-buy-usdt)
-- [免 KYC 虚拟卡排名](/zh/learn/no-kyc-virtual-card-ranking)
+- [虚拟卡是什么？2026年最全科普](/learn/what-is-virtual-card)
+- [虚拟信用卡新手完全指南](/learn/virtual-card-for-beginners)
+- [如何购买 USDT](/learn/how-to-buy-usdt)
+- [免 KYC 虚拟卡排名](/learn/no-kyc-virtual-card-ranking)

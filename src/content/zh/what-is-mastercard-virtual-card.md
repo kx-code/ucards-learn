@@ -463,4 +463,4 @@ Mastercard 虚拟卡在 2026 年是在线支付的优秀选择。它拥有与 Vi
 
 **立即开通 uCards Mastercard 虚拟卡：** [ucards.uk](https://ucards.uk/?utm_source=learn&utm_medium=article&utm_campaign=mastercard-virtual-card)
 
-**推荐阅读：** [Visa虚拟卡完全指南](/zh/what-is-visa-virtual-card) | [虚拟卡vs实体卡对比](/zh/virtual-card-vs-physical-card) | [最佳虚拟信用卡对比](/zh/best-virtual-credit-cards)
+**推荐阅读：** [Visa虚拟卡完全指南](/learn/what-is-visa-virtual-card) | [虚拟卡vs实体卡对比](/learn/virtual-card-vs-physical-card) | [最佳虚拟信用卡对比](/learn/best-virtual-credit-cards)

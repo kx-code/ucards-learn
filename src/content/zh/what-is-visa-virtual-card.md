@@ -397,4 +397,4 @@ Visa 虚拟卡结合了 Visa 全球最大支付网络的广泛接受度和虚拟
 
 **立即开通 uCards Visa 虚拟卡：** [ucards.uk](https://ucards.uk/?utm_source=learn&utm_medium=article&utm_campaign=visa-virtual-card)
 
-**推荐阅读：** [Mastercard虚拟卡指南](/zh/what-is-mastercard-virtual-card) | [虚拟卡vs实体卡对比](/zh/virtual-card-vs-physical-card) | [最佳虚拟信用卡对比](/zh/best-virtual-credit-cards)
+**推荐阅读：** [Mastercard虚拟卡指南](/learn/what-is-mastercard-virtual-card) | [虚拟卡vs实体卡对比](/learn/virtual-card-vs-physical-card) | [最佳虚拟信用卡对比](/learn/best-virtual-credit-cards)

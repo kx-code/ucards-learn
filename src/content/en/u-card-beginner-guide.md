@@ -448,4 +448,4 @@ From preparation to your first purchase, the entire process takes under 10 minut
 
 ---
 
-Visit [ucards.uk](https://ucards.uk/?utm_source=learn&utm_medium=article&utm_campaign=u-card-beginner-guide) now and follow this tutorial to get your first U Card. If you run into any issues, check out the [U Card FAQ](/en/u-card-common-questions) or the [FAQ page](/en/faq) for help.
+Visit [ucards.uk](https://ucards.uk/?utm_source=learn&utm_medium=article&utm_campaign=u-card-beginner-guide) now and follow this tutorial to get your first U Card. If you run into any issues, check out the [U Card FAQ](/learn/en/u-card-common-questions) or the [FAQ page](/learn/en/faq) for help.

@@ -85,7 +85,7 @@ When you add funds to an existing card, uCards charges a small percentage as a p
 
 Some card types carry a monthly maintenance fee. Others have no recurring charges. The monthly fee, when applicable, is deducted from your card balance automatically. This information is disclosed before purchase.
 
-For a detailed fee breakdown, see our dedicated [uCards fees guide](/en/ucards-fees).
+For a detailed fee breakdown, see our dedicated [uCards fees guide](/learn/en/ucards-fees).
 
 ## Speed Test: How Fast Is It Really?
 
@@ -191,6 +191,6 @@ After thorough testing, uCards delivers on its core promise: fast, no-KYC virtua
 
 The main deductions come from the crypto-only funding requirement (not everyone holds USDT) and the lack of a physical card option. But for its target audience — crypto users who want private, instant virtual cards — uCards is one of the strongest options available in 2026.
 
-If you are curious about the fee structure in detail, check out our [uCards fees breakdown](/en/ucards-fees). For a broader comparison of virtual card options, see our [best virtual credit cards guide](/en/best-virtual-credit-cards).
+If you are curious about the fee structure in detail, check out our [uCards fees breakdown](/learn/en/ucards-fees). For a broader comparison of virtual card options, see our [best virtual credit cards guide](/learn/en/best-virtual-credit-cards).
 
 Ready to try it? Visit [ucards.uk](https://ucards.uk) and get your card in minutes.

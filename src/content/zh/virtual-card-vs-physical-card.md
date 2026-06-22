@@ -354,4 +354,4 @@ uCards 虚拟卡的开通门槛远低于传统银行卡，适合全球用户。
 
 **立即开通 uCards 虚拟卡：** [ucards.uk](https://ucards.uk/?utm_source=learn&utm_medium=article&utm_campaign=vc-vs-pc)
 
-**推荐阅读：** [在线支付方式全面对比](/zh/what-is-online-payment) | [Visa虚拟卡完全指南](/zh/what-is-visa-virtual-card) | [最佳虚拟信用卡对比](/zh/best-virtual-credit-cards)
+**推荐阅读：** [在线支付方式全面对比](/learn/what-is-online-payment) | [Visa虚拟卡完全指南](/learn/what-is-visa-virtual-card) | [最佳虚拟信用卡对比](/learn/best-virtual-credit-cards)

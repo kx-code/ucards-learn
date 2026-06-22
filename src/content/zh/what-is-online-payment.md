@@ -350,4 +350,4 @@ ratingCount: 1200
 
 但如果要选择一个综合最优的在线支付方式，加密充值的虚拟信用卡（如 uCards）在安全性、隐私保护、便捷性和成本方面达到了最佳平衡。它将加密货币的隐私优势与 Visa/Mastercard 的广泛接受度完美结合，是2026年最值得尝试的在线支付方式。
 
-**推荐阅读：** [虚拟卡和实体卡的区别](/zh/virtual-card-vs-physical-card) | [匿名支付方式指南](/zh/anonymous-online-payment) | [Visa虚拟卡是什么](/zh/what-is-visa-virtual-card)
+**推荐阅读：** [虚拟卡和实体卡的区别](/learn/virtual-card-vs-physical-card) | [匿名支付方式指南](/learn/anonymous-online-payment) | [Visa虚拟卡是什么](/learn/what-is-visa-virtual-card)

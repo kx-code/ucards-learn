@@ -1,3 +1,11 @@
+const UCARDS_ORG_ID = 'https://ucards.uk/#organization'
+const UCARDS_SITE_ID = 'https://ucards.uk/#website'
+const UCARDS_ALTERNATE_NAMES = ['uCards', 'U卡', 'u卡', 'U Card', 'uCard', 'uCards虚拟信用卡']
+const UCARDS_SAME_AS = [
+  'https://www.linkedin.com/company/ucards-uk',
+  'https://crunchbase.com/organization/ucards-uk',
+]
+
 export function articleJsonLd({
   title,
   description,
@@ -24,11 +32,13 @@ export function articleJsonLd({
     dateModified,
     author: {
       '@type': 'Organization',
+      '@id': UCARDS_ORG_ID,
       name: 'uCards',
       url: 'https://ucards.uk',
     },
     publisher: {
       '@type': 'Organization',
+      '@id': UCARDS_ORG_ID,
       name: 'uCards',
       logo: {
         '@type': 'ImageObject',
@@ -191,6 +201,7 @@ export function productJsonLd({
         },
         author: {
           '@type': 'Organization',
+          '@id': UCARDS_ORG_ID,
           name: 'uCards Editorial Team',
         },
       },
@@ -202,6 +213,7 @@ export function productJsonLd({
       availability: 'https://schema.org/InStock',
       seller: {
         '@type': 'Organization',
+        '@id': UCARDS_ORG_ID,
         name: 'uCards',
       },
     })),
@@ -242,9 +254,7 @@ export function collectionJsonLd(name: string, url: string) {
     name,
     url,
     publisher: {
-      '@type': 'Organization',
-      name: 'uCards',
-      url: 'https://ucards.uk',
+      '@id': UCARDS_ORG_ID,
     },
   }
 }
@@ -253,8 +263,9 @@ export function organizationJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': UCARDS_ORG_ID,
     name: 'uCards',
-    alternateName: ['uCards', 'U卡', 'u卡', 'U Card', 'uCard', 'uCards虚拟信用卡'],
+    alternateName: UCARDS_ALTERNATE_NAMES,
     url: 'https://ucards.uk',
     logo: {
       '@type': 'ImageObject',
@@ -262,7 +273,15 @@ export function organizationJsonLd() {
     },
     description:
       'uCards (U卡) — No-KYC virtual credit card platform. Pay with USDT, TRON, Ethereum. Get instant Visa, Mastercard, and Discover cards. Zero setup fee.',
-    sameAs: ['https://twitter.com/ucards', 'https://github.com/ucards'],
+    foundingDate: '2024',
+    sameAs: UCARDS_SAME_AS,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      email: 'support@ucards.uk',
+      availableLanguage: ['en', 'zh'],
+      url: 'https://ucards.uk/faq',
+    },
   }
 }
 
@@ -270,14 +289,13 @@ export function webSiteJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': UCARDS_SITE_ID,
     name: 'uCards Learn',
     url: 'https://ucards.uk/learn',
     description:
       'uCards Learn — Learn about virtual credit cards, cryptocurrency payments, and online security. 44+ in-depth guides and tutorials. U卡知识库。',
     publisher: {
-      '@type': 'Organization',
-      name: 'uCards',
-      url: 'https://ucards.uk',
+      '@id': UCARDS_ORG_ID,
     },
   }
 }

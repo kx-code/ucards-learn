@@ -348,6 +348,6 @@ If you decide to try a virtual card, here are the steps using uCards:
 
 **Related articles**:
 
-- [What Is a Virtual Card? The Complete 2026 Guide](/en/learn/what-is-virtual-card)
-- [How Virtual Credit Cards Work: A Deep Dive](/en/learn/virtual-card-how-it-works)
-- [The Complete Beginner's Guide to Virtual Credit Cards](/en/learn/virtual-card-for-beginners)
+- [What Is a Virtual Card? The Complete 2026 Guide](/learn/en/what-is-virtual-card)
+- [How Virtual Credit Cards Work: A Deep Dive](/learn/en/virtual-card-how-it-works)
+- [The Complete Beginner's Guide to Virtual Credit Cards](/learn/en/virtual-card-for-beginners)

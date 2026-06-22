@@ -376,7 +376,7 @@ Not having a bank account does not mean you have no options for online payments.
 
 **Related articles:**
 
-- [What Is a Virtual Card? The Complete 2026 Guide](/en/learn/what-is-virtual-card)
-- [The Complete Beginner's Guide to Virtual Credit Cards](/en/learn/virtual-card-for-beginners)
-- [How to Buy USDT](/en/learn/how-to-buy-usdt)
-- [No-KYC Virtual Card Rankings](/en/learn/no-kyc-virtual-card-ranking)
+- [What Is a Virtual Card? The Complete 2026 Guide](/learn/en/what-is-virtual-card)
+- [The Complete Beginner's Guide to Virtual Credit Cards](/learn/en/virtual-card-for-beginners)
+- [How to Buy USDT](/learn/en/how-to-buy-usdt)
+- [No-KYC Virtual Card Rankings](/learn/en/no-kyc-virtual-card-ranking)

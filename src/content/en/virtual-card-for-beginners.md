@@ -373,7 +373,7 @@ Ready? Visit [ucards.uk](https://ucards.uk/?utm_source=learn&utm_medium=article&
 
 **Related articles:**
 
-- [How to Buy USDT](/en/learn/how-to-buy-usdt)
-- [What Is a Virtual Card?](/en/learn/what-is-virtual-card)
-- [TRC20 Transfer Guide](/en/learn/what-is-trc20)
-- [How to Get a Credit Card Without a Bank Account](/en/learn/virtual-card-without-bank)
+- [How to Buy USDT](/learn/en/how-to-buy-usdt)
+- [What Is a Virtual Card?](/learn/en/what-is-virtual-card)
+- [TRC20 Transfer Guide](/learn/en/what-is-trc20)
+- [How to Get a Credit Card Without a Bank Account](/learn/en/virtual-card-without-bank)
